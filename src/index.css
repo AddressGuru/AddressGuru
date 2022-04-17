@@ -1,0 +1,86 @@
+
+.custom-menu-css{
+        box-shadow: 3px 3px 6px #d1d1d1,-3px -3px 6px #fff;
+background: linear-gradient(to bottom right,#efefef,#f9e88b14)
+}
+.custom-menu-css:hover{
+       cursor: pointer;
+       transform: scale(1.1);
+background: white;
+}
+
+.custom-menu-css-v2:hover{
+        box-shadow: 3px 3px 6px #d1d1d1,-3px -3px 6px #fff;
+        background: linear-gradient(to bottom right,#efefef,#f9e88b14); 
+        cursor: pointer;
+       transform: scale(1.1);
+background: white;
+}
+
+.form-control{
+        width: 20%;
+        border: none;
+}
+.offcanvas-start{
+max-width: 338px !important;
+}
+.accordion{
+        margin-bottom: 10px !important;
+}
+.accordion-button::after{
+        display: none !important;
+        
+}
+
+.offcanvas {
+        background-image: linear-gradient(#00467a,#00237a);
+}
+.accordion-item{
+        border: none !important;
+        background: transparent !important;
+        color: white !important;
+}
+.accordion-button {
+        color: white !important;
+        background: transparent !important;
+}
+
+
+.very-small{
+        font-size: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+}
+.dropdown-menu.show{
+        height: 450px !important;
+        overflow: scroll !important;
+}
+.dropdown-toggle{
+        background: transparent !important;
+        color: black !important;
+        border: none !important;
+}
+.dropdown-toggle:hover{
+        background: transparent !important;
+        color: black !important;
+        border: none !important;
+}
+.dropdown-toggle:focus{
+        background: transparent !important;
+        color: black !important;
+        border: none !important;
+}
+.btn-check:focus + .btn, .btn:focus{
+        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
+}
+.Pricing-Heading{
+       background: transparent;
+       box-shadow: inset 3px 3px 6px #bfc3cf,inset -3px -3px 6px #fff;
+}
+.Pricing-table{
+        background: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+        box-shadow: 3px 3px 6px #bfc3cf,-3px -3px 6px #fff;
+}
+.partner{
+        background-image: url('./Asset/Image/patner.jpg');
+}
