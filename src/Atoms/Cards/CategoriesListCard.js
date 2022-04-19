@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import listing from "../../Asset/Image/listing.png"
 
 const CategoiesListCard=(props)=>{
@@ -29,7 +30,7 @@ const CategoiesListCard=(props)=>{
 
 </div>
 <div className="py-20 pl-10">
-<button className="btn btn-primary ">View  More</button>
+<Link to="/third"><button className="btn btn-primary ">View  More</button></Link>
 
 </div>
 </div>
