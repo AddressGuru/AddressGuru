@@ -7,6 +7,7 @@ import Header from "./Atoms/Header/Header";
 import AboutUs from "./View/AboutUs";
 import CategoriesLanding from "./View/CategoriesLanding";
 import Contact from "./View/Contact";
+import Dealer from "./View/Dealer";
 import Index from "./View/Index";
 import Infringementpolicy from "./View/Infringement-policy";
 import Job from "./View/Job";
@@ -39,6 +40,7 @@ const App=()=>{
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/job" element={<Job/>}/>
                         <Route path="/partner" element={<Partner/>}/>
+                        <Route path="/dealer" element={<Dealer/>}/>
                 </Routes>
                 <Footer/>
                 </>

@@ -84,3 +84,34 @@ max-width: 338px !important;
 .partner{
         background-image: url('./Asset/Image/patner.jpg');
 }
+.DealerBakground{
+        background-image: url('./Asset/Image/house.jpg');
+}
+.backdeal{
+background: linear-gradient( 0deg, rgba(1, 1, 1, 1) 12%, rgba(1, 1, 0, 0) 141%);
+}
+
+ 
+
+.dealer .accordion-item{
+       
+        background: transparent !important;
+        color: white !important;
+        border: 2px solid rgb(223, 223, 223) !important;
+}
+.dealer .accordion-button {
+        color: white !important;
+        background: #63636321 !important;
+}
+
+.view_dealar_buttom{
+        background-color: #1ABC9C;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        padding: .70rem 1.84rem;
+        text-decoration: none;
+color: #fff;
+float: right;
+border-radius: 4px;
+font-size: 15px;
+
+}

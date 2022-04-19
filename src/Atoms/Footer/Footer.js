@@ -29,9 +29,10 @@ const Footer = () => {
                                         <div className="px-1 py-3 text-gray-500 text-sm ">
                                      <Link to='/about' className="no-underline text-gray-600" >   <p> <i className="fa fa-chevron-right fa-fw"/> About Us</p></Link>
                                      <Link className="no-underline text-gray-600" to='/contact'>  <p> <i className="fa fa-chevron-right fa-fw"/>Contact Us</p></Link>
-                                     <Link className="no-underline text-gray-600" to='/'>  <p> <i className="fa fa-chevron-right fa-fw"/>Become a partner</p></Link>
+                                     <Link className="no-underline text-gray-600" to='/partner'>  <p> <i className="fa fa-chevron-right fa-fw"/>Become a partner</p></Link>
                                      <Link className="no-underline text-gray-600" to='/postingrules'>  <p> <i className="fa fa-chevron-right fa-fw"/>Posting Rules</p></Link>
                                      <Link className="no-underline text-gray-600" to='/market'>  <p> <i className="fa fa-chevron-right fa-fw"/>Market Place</p></Link>
+                                     <Link className="no-underline text-gray-600" to='/dealer'>  <p> <i className="fa fa-chevron-right fa-fw"/>Dealer</p></Link>
                                         </div>
                                 </div>
                                 <div className="">
