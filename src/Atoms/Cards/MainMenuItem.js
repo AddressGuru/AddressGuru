@@ -9,7 +9,7 @@ const MainMenuItem=(props)=>{
 
 
 
-{props.image?<Link to="/Landing"  className="no-underline text-gray-800">
+{props.image?<Link to="/job"  className="no-underline text-gray-800">
      <div className=" p-2  rounded-xl custom-menu-css">
 <div className="flex justify-center">
 
