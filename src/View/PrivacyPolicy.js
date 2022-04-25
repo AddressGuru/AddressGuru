@@ -10,7 +10,7 @@ const Privacy=()=>{
   },[])
 
         return(
-                <div className="px-80 bg-gray-100 py-10">
+                <div className="px-48 bg-gray-100 py-10">
 <h1 className="text-blue-500 font-bold">Privacy Policies</h1>
 <hr/>
 <h3 className="text-semibold">WHAT INFORMATION DO WE COLLECT?</h3>

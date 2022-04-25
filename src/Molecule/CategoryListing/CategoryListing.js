@@ -6,7 +6,7 @@ import Accordion from 'react-bootstrap/Accordion'
 const CategoryListing = () => {
 
         return (
-                <div className="grid grid-cols-4 gap-4 px-80">
+                <div className="grid grid-cols-4 gap-4 px-48">
                         <div className="col-span-3">
                                 <CategoiesListCard />
                                 <CategoiesListCard />

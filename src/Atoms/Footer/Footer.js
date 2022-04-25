@@ -4,7 +4,7 @@ const Footer = () => {
         return (
                 <div className="bg-white border-t-2">
                
-                        <div className="grid grid-cols-3 px-40 py-14">
+                        <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 lg:px-40 px-2 py-14 mb-10">
                                 <div className="px-5">
                                         <h1 className=" text-xl font-semibold text-left text-gray-800">Address Guru</h1>
                                         <br/>
@@ -24,7 +24,8 @@ const Footer = () => {
                                         </span>
                                        
                                 </div>
-                                <div className="px-20">
+                        
+                                <div className=" hidden lg:block lg:px-20 px-12 mt-2">
                                         <h3 className="text-xl font-semibold text-gray-800"> <i class="fa fa-info fa-fw" /> Important Links</h3>
                                         <div className="px-1 py-3 text-gray-500 text-sm ">
                                      <Link to='/about' className="no-underline text-gray-600" >   <p> <i className="fa fa-chevron-right fa-fw"/> About Us</p></Link>
@@ -35,7 +36,8 @@ const Footer = () => {
                                      <Link className="no-underline text-gray-600" to='/dealer'>  <p> <i className="fa fa-chevron-right fa-fw"/>Dealer</p></Link>
                                         </div>
                                 </div>
-                                <div className="">
+                              
+                                <div className="hidden lg:block lg:px-20 px-12 mt-2">
                                         <h3 className="text-xl font-semibold text-gray-800"> <i class="fa fa-search fa-fw" /> Quick Links</h3>
                                         <div className="px-2 py-3 text-gray-500 text-sm">
                                         <p> <i className="fa fa-chevron-right fa-fw"/>Post Ad</p>
@@ -53,7 +55,7 @@ const Footer = () => {
                         </div>
                         
                         {/* second */}
-                        <div className="grid grid-cols-4 px-40 py-10">
+                        <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-40 px-4 py-10">
                                 <div>
                                         <h3 className="text-lg text-gray-800 font-bold">Contact By Phone</h3>
                                         <br/>
@@ -101,7 +103,7 @@ const Footer = () => {
 
 
                         {/* third */}
-                        <div className="grid grid-cols-4 gap-16 px-40 py-10">
+                        <div className=" lg:block hidden grid grid-cols-4 gap-16 px-40 py-10">
 <div className="col-span-3 text-xs text-gray-400">
 Disclaimer: All the data and information provided on the site are owned by Address Guru and is protected under Personal Data Protection Act 2012 (PDPA) and Section 107 of the Copyright Act. You are prohibited to copying, modifying or making any differences in the content without any authority of being a member of Address Guru.
 <br/><br/>
@@ -116,7 +118,7 @@ Before posting anything or becoming a partner of Address Guru, read carefully al
                         </div>
 
                         {/* fourth */}
-                        <div className="grid grid-cols-3 bg-black text-white px-40 py-4">
+                        <div className="lg:block hidden grid grid-cols-3 bg-black text-white px-40 py-4">
                         <div>
 <p> 16,303 Live Ads | 3,102+ Agents </p>
                         </div>

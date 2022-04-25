@@ -5,7 +5,7 @@ const Infringementpolicy=()=>{
                 window.scrollTo(0, 0);
               },[])
         return(
-                <div className="px-80 bg-gray-100 py-10">
+                <div className="px-48 bg-gray-100 py-10">
 <h1 className="text-blue-500 font-bold">Infregment Policy</h1>
 <hr/>
 <p className="text-sm">

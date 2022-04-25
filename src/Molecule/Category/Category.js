@@ -13,9 +13,9 @@ const Category=()=>{
         return(
              <div>
              {/* <h1 className="text-center text-blue-500 font-sans font-bold">Search Just One Click <i class="fa fa-hand-o-right" aria-hidden="true"></i> Away</h1> */}
-            <div className="grid grid-cols-8 gap-4 px-40">
+            <div className="lg:grid lg:grid-cols-8 sm:grid sm:grid-cols-6  gap-4 lg:px-10 xl:px-48">
 <div className="col-span-6">
-{load?<div className="grid grid-cols-6 gap-4 pt-2  ">
+{load?<div className="grid grid-cols-4 lg:grid lg:grid-cols-6 px-2 gap-2 pt-2  ">
              
              {data.map((items,i)=>(
                 <MainMenuItem name={items.name} color={items.colors} icon={items.icon} id={items.id} product={items.product}/>
@@ -23,12 +23,12 @@ const Category=()=>{
 </div>:<div>
 </div>}
 </div>
-<div className="col-span-2 pt-2 ">
+<div className="lg:col-span-2 col-span-6 md:col-span-6 lg:pt-2   ">
 <div className="p-1 border-2 border-gray">
-<img src={advertise}/>
+<img src={advertise} className="w-full"/>
 </div>
 <div className="p-1 border-2 border-gray">
-<img src={banner}/>
+<img src={banner} className="w-full"/>
 </div>
 </div>
             </div>

@@ -55,7 +55,7 @@ const MarketPlace = () => {
                         <img src={marketplace}/>
                 </div>
                         {/* <h1 className="text-center text-blue-500 font-sans font-bold mb-10">Market Place is Here </h1> */}
-                        {load ? <div className="px-40">
+                        {load ? <div className="lg:px-48 lg:block hidden">
                                 
                                 <div className="px-2 pt-4 mb-0">
                                       
@@ -73,7 +73,10 @@ const MarketPlace = () => {
                                 : <div>
                                 </div>}
 
-                        {status ? <div className="grid grid-cols-5 gap-4 py-10 px-40 ">
+                        {status ? <div className="lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 grid grid-cols-2
+                        
+                        
+                         gap-4 py-10 lg:px-48 sm:px-4 md:px-10 ">
 
                                 {market.records.map((items, i) => (
                                         <MarketPlaceCards data={items} />

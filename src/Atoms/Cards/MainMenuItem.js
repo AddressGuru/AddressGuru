@@ -10,22 +10,22 @@ const MainMenuItem=(props)=>{
 
 
 {props.image?<Link to="/job"  className="no-underline text-gray-800">
-     <div className=" p-2  rounded-xl custom-menu-css">
+     <div className=" lg:p-2 p-1  rounded-xl custom-menu-css">
 <div className="flex justify-center">
 
-<img src={props.image} className="w-1/2"/>
+<img src={props.image} className="lg:w-1/2 w-1/3"/>
 </div>
-<h3 className="text-center text-lg font-semibold mt-2 mb-0">{props.name}</h3>   
-<p className="text-center text-xs mb-0">(4300)</p>
+<h6 className="text-center MainMenuTitle   font-semibold mt-2 mb-0">{props.name}</h6>   
+<p className="text-center MainMenuCount mb-0">(4300)</p>
 </div>
 </Link>:
 <Link to="/landing" className="no-underline text-gray-800">
-<div className=" rounded-xl  custom-menu-css-v2 pt-3 ">
+<div className=" rounded-xl  custom-menu-css-v2 pt-3 pb-1 px-1 ">
 <div className="flex justify-center">
 
-<i className={`fa fa-${props.icon} fa-3x ` } style={{color:`${props.color}`}} />
+<i className={`fa fa-${props.icon} lg:fa-3x fa-2x ` } style={{color:`${props.color}`}} />
 </div>
-<h3 className="text-center text-sm font-semibold mt-2">{props.name}</h3>
+<h3 className="text-center text-xs MainMenuTitle lg:text-sm lg:font-semibold xs:font-normal mt-2">{props.name}</h3>
 </div>
 </Link>
 }

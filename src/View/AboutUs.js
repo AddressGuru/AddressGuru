@@ -6,7 +6,7 @@ const AboutUs=()=>{
     window.scrollTo(0, 0);
   },[])
         return(
-                <div className="px-80 bg-gray-100 py-10">
+                <div className="px-48 bg-gray-100 py-10">
 <h1 className="text-blue-500 font-bold">About Us</h1>
 <hr/>
 <p className="text-sm">Address Guru is an online business directory where businesses of every category are listed and promoted. Address guru helps in getting locals as well as big businesses have an online presence and reach among the online audience. This is done through online posting of Ads on our website.

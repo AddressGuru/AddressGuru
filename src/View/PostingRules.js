@@ -7,7 +7,7 @@ const PostingRules=()=>{
   },[])
 
         return(
-                <div className="px-80 bg-gray-100 py-10 ">
+                <div className="px-48 bg-gray-100 py-10 ">
                 <div className="mb-20">
 <h1 className="text-blue-500 font-bold">Posting Rules <span>(What not allowed)</span> </h1>
 <hr/>

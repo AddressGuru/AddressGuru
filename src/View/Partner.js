@@ -10,7 +10,7 @@ const Partner=()=>{
 
         return(
 <div>
-<div className="grid grid-cols-7 gap-16 py-10 px-40 bg-gray-100  partner ">
+<div className="grid grid-cols-7 gap-16 py-10 px-48 bg-gray-100  partner ">
 <div className="col-span-2">
 <PartnerForm/>
 </div>

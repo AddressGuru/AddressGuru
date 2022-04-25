@@ -4,9 +4,10 @@ import { Accordion } from "react-bootstrap";
 
 
 const Job = () => {
+        const Array=[1,2,3,4,5,6,7,8]
         return (
                 <>
-                        <div className="grid grid-cols-5 gap-4 bg-gray-100 mt-2 py-10 px-40">
+                        <div className="grid grid-cols-5 gap-4 bg-gray-100 mt-2 py-10 px-48">
                                 <div>
                                 <div>
                               <div className="px-1  mb-0">
@@ -78,30 +79,11 @@ const Job = () => {
 
 
                                 <div className="col-span-3">
-                                <div className="bg-white px-4 py-4 mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
 
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
+                                {Array.map((items,i)=>(
+                                        <div className="bg-white px-4 py-4 mt-2 rounded-xl">
+                                <div className="grid grid-cols-6">
+<div className="col-span-5">
 <h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
 <p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
 <div className="grid grid-cols-3">
@@ -109,7 +91,7 @@ const Job = () => {
 <span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
 </div>
 </div>
-<div>
+<div className="col-span-1">
 <img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
 </div>
                                 </div>
@@ -119,132 +101,10 @@ const Job = () => {
                                 <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
                                 </div>
                                 </div>
+                                ))}
+                              
 
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
-
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>  
-
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
-
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
-
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
-
-                                <div className="bg-white px-4 py-4  mt-2 rounded-xl">
-                                <div className="grid grid-cols-4">
-<div className="col-span-3">
-<h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-<p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-<div className="grid grid-cols-3">
-<span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-<span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-</div>
-</div>
-<div>
-<img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl"/>     
-</div>
-                                </div>
-                                <div>
-                              
-                                <button className="btn btn-primary">View Detail</button>
-                                <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
-                                </div>
-                                </div>
+                               
 
 
                                 </div>
@@ -264,22 +124,27 @@ const Job = () => {
                                                                        Charted Accountant -  Corporate Audit Services
                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                 </div>
+                                                                <hr/>
                                                                 <div className="px-1">
                                                                        Legal Contennt Creator Finology Ventures PrivateLimited
                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                 </div>
+                                                                <hr/>
                                                                 <div className="px-1">
                                                                        Charted Accountant -  Corporate Audit Services
                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                 </div>
+                                                                <hr/>
                                                                 <div className="px-1">
                                                                        Legal Contennt Creator Finology Ventures PrivateLimited
                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                 </div>
+                                                                <hr/>
                                                                 <div className="px-1">
                                                                        Charted Accountant -  Corporate Audit Services
                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                 </div>
+                                                                <hr/>
                                                                 <div className="px-1">
                                                                        Legal Contennt Creator Finology Ventures PrivateLimited
                                                                         <p className="text-gray-500 text-sm">1 Job</p>

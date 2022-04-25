@@ -6,6 +6,7 @@ import MenuSection from "../Organism/Index.js/MenuSection";
 import ListSection from "../Organism/Index.js/ListingSection";
 import ListingSection from "../Organism/Index.js/ListingSection";
 import TrustedSection from "../Organism/Index.js/TrustedSection";
+import MobileMenu from "../Atoms/MobileMenu";
 
 
 
@@ -20,6 +21,9 @@ const Index=()=>{
 <MarketPlaceSection/>
 <ListingSection/>
 <TrustedSection/>
+
+<MobileMenu/>
+
                 </div>
         )
 }
