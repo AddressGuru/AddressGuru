@@ -125,3 +125,25 @@ font-size: 15px;
 .MarketListFooter{
         font-size: 9px !important;
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+        .sidePadding {
+          padding: 10px;
+        }
+      }
+
+
+
+
+
+
+
+

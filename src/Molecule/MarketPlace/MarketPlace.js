@@ -51,7 +51,7 @@ const MarketPlace = () => {
         console.log(data)
         return (
                 <div className="bg-gray-100 mt-8">
-                <div className="mb-8">
+                <div className="lg:mb-4 mb-2">
                         <img src={marketplace}/>
                 </div>
                         {/* <h1 className="text-center text-blue-500 font-sans font-bold mb-10">Market Place is Here </h1> */}
@@ -76,7 +76,7 @@ const MarketPlace = () => {
                         {status ? <div className="lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 grid grid-cols-2
                         
                         
-                         gap-4 py-10 lg:px-48 sm:px-4 md:px-10 ">
+                         gap-4 lg:py-10 lg:px-48 sm:px-4 md:px-10 sidePadding">
 
                                 {market.records.map((items, i) => (
                                         <MarketPlaceCards data={items} />

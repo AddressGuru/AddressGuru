@@ -4,16 +4,28 @@ import banner from "../../Asset/Image/front-banner.jpeg"
 import { Context } from "../../Api/Categories"
 import { useContext } from "react"
 import advertise from "../../Asset/Image/advertise1.png"
+
+
+
+
+
 const Category=()=>{
         const {value1, value2}= useContext(Context);
         const [data, setData] = value1;
         const [load, setLoad] = value2;
 
+
        
         return(
              <div>
+
+
+
+
+
+
              {/* <h1 className="text-center text-blue-500 font-sans font-bold">Search Just One Click <i class="fa fa-hand-o-right" aria-hidden="true"></i> Away</h1> */}
-            <div className="lg:grid lg:grid-cols-8 sm:grid sm:grid-cols-6  gap-4 lg:px-10 xl:px-48">
+            <div className="lg:grid lg:grid-cols-8 sm:grid sm:grid-cols-6  gap-4 lg:px-10 xl:px-48 ">
 <div className="col-span-6">
 {load?<div className="grid grid-cols-4 lg:grid lg:grid-cols-6 px-2 gap-2 pt-2  ">
              

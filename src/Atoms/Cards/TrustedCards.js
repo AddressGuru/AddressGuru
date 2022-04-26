@@ -8,9 +8,9 @@ const TrustedCard = (props) => {
              <div className="flex justify-center">
               <img src={props.image} className="w-2/5 "/>
               </div>
-                      <div className="pt-4">
-                      <h1 className="text-2xl ">{props.title}</h1>
-                      <p className="text-gray-600 ">
+                      <div className="pt-4 ">
+                      <h1 className="text-2xl sm:text-lg">{props.title}</h1>
+                      <p className="text-gray-600 sm:text-sm">
                      {props.content}
                       </p>
                       <button className="btn btn-primary">View Details</button>
