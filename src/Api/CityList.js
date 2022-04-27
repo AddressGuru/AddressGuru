@@ -31,7 +31,7 @@ const CityList=(props)=>{
         },[])
          // ##################useeffect####################
         return(
-                <div>
+                <div className="sticky top-0 z-50">
  <Context.Provider
                 value={{
                     value1: [data, setData],

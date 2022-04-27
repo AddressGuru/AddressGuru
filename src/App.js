@@ -19,30 +19,32 @@ import PostingRules from "./View/PostingRules";
 import Pricing from "./View/Pricing";
 import Privacy from "./View/PrivacyPolicy";
 
-const App=()=>{
-        return(
+const App = () => {
+        return (
                 <>
-                <CityList>
-                        <Header/>
-                </CityList>
-                <Categories/>
-                <Routes>
-                        <Route path="/" element={<Categories><Index/></Categories>}/>
-                        <Route path="/landing" element={<CategoriesLanding/>}/>
-                        <Route path="/third" element={<Landing/>}/>
-                        <Route path="/privacyPolicy" element={<Privacy/>}/>
-                        <Route path="/about" element={<AboutUs/>}/>
-                        <Route path="/InfregmentPolicy" element={<Infringementpolicy/>}/>
-                        <Route path="/postingrules" element={<PostingRules/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
-                        <Route path="/pricing" element={<Pricing/>}/>
-                        <Route path="/Market" element={<MarketLanding/>}/>
-                        <Route path="/login" element={<Login/>}/>
-                        <Route path="/job" element={<Job/>}/>
-                        <Route path="/partner" element={<Partner/>}/>
-                        <Route path="/dealer" element={<Dealer/>}/>
-                </Routes>
-                <Footer/>
+                        <CityList>
+                                
+                                        <Header />
+                             
+                        </CityList>
+                        <Categories />
+                        <Routes>
+                                <Route path="/" element={<Categories><Index /></Categories>} />
+                                <Route path="/landing" element={<CategoriesLanding />} />
+                                <Route path="/third" element={<Landing />} />
+                                <Route path="/privacyPolicy" element={<Privacy />} />
+                                <Route path="/about" element={<AboutUs />} />
+                                <Route path="/InfregmentPolicy" element={<Infringementpolicy />} />
+                                <Route path="/postingrules" element={<PostingRules />} />
+                                <Route path="/contact" element={<Contact />} />
+                                <Route path="/pricing" element={<Pricing />} />
+                                <Route path="/Market" element={<MarketLanding />} />
+                                <Route path="/login" element={<Login />} />
+                                <Route path="/job" element={<Job />} />
+                                <Route path="/partner" element={<Partner />} />
+                                <Route path="/dealer" element={<Dealer />} />
+                        </Routes>
+                        <Footer />
                 </>
         )
 }

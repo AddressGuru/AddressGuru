@@ -21,7 +21,8 @@ const Header = () => {
   }
 
   return (
-    <div className=" bg-gray-100 z-50" >
+    <div className="sticky top-0">
+      <div className=" bg-gray-100 z-50" >
       <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-3 px-2  ">
         <div className=" lg:pt-3 px-4">
           <SideNav />
@@ -31,11 +32,15 @@ const Header = () => {
         </div>
         <div className=" pt-2 lg:hidden block">
           <Dropdown className="float-right justify-right">
-            <Dropdown.Toggle id="dropdown-basic">
-              <i className="fa fa-map-marker fa-fw"></i> {city}
+            <Dropdown.Toggle id="dropdown-basic" >
+              <i className="fa fa-map-marker text-xs fa-fw"></i> {city}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
+            <div className="bg-white sticky pt-2 -top-5">
+            <input type={`text`} placeholder="Searc Your City " className=" bg-white px-3 py-1  mb-2 w-full border-2 rounded-3xl "/>
+            </div>
+           
               {data.sort().map((items, i) => (
                 <Dropdown.Item onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-fw"></i> {items}</Dropdown.Item>
               ))}
@@ -44,14 +49,14 @@ const Header = () => {
         </div>
 
         <div className="col-span-5 mt-3 px-2 ">
-          <div className="border-2 bg-white border-gray-400 p-1 lg:flex lg:justify-center rounded-3xl  pr-1">
+          <div className="border-2 bg-white border-gray-400 p-1 lg:flex lg:justify-center pr-1">
             <Dropdown className="hidden lg:block">
               <Dropdown.Toggle id="dropdown-basic">
                 <i className="fa fa-map-marker fa-fw text-xs"></i> {city}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-              <input type={`text`} placeholder="Search Your City " className="mx-2 my-2 px-2 border-2 rounded-3xl "/>
+              <input type={`text`} placeholder="Search Your City " className="mx-2 my-2 px-2 border-2  "/>
                 {data.sort().map((items, i) => (
                   <Dropdown.Item onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-fw"></i> {items}</Dropdown.Item>
                 ))}
@@ -72,6 +77,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   )
 }

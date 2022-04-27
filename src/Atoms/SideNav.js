@@ -12,7 +12,7 @@ const SideNav = () => {
   return (
     <div>
 
-      <i className="fa fa-bars lg:fa-2x fa-lg mt-3" onClick={handleShow}></i>
+      <i className="cursor-pointer fa fa-bars lg:fa-2x fa-lg mt-3" onClick={handleShow}></i>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
