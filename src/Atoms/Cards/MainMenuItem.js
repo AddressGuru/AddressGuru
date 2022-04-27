@@ -23,7 +23,7 @@ const MainMenuItem=(props)=>{
 <div className=" rounded-xl  custom-menu-css-v2 pt-3 pb-1 px-1 ">
 <div className="flex justify-center">
 
-<i className={`fa fa-${props.icon} lg:fa-3x fa-2x ` } style={{color:`${props.color}`}} />
+<i className={`fa fa-${props.icon} lg:fa-3x fa-3x ` } style={{color:`${props.color}`}} />
 </div>
 <h3 className="text-center text-xs MainMenuTitle lg:text-sm lg:font-semibold xs:font-normal mt-2">{props.name}</h3>
 </div>

@@ -64,7 +64,7 @@ const Header = () => {
             </Dropdown>
 
             <input type={`text`} placeholder={`Search `} className=" w-4/5 lg:w-3/5 lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0" />
-            <button className=" lg:w-1/5 float-right -top-1 relative p-1 lg:relative lg:top-0  "> <i class="fa fa-search text-xs xl:text-sm float-right bg-purple-800 px-2 py-1 rounded-2xl text-white "></i></button>
+            <button className=" lg:w-1/5 float-right -top-2 relative  lg:relative lg:top-0  "> <i class="fa fa-search text-sm xl:text-sm float-right text-orange-500 px-2 py-1 rounded-2xl "></i></button>
           </div>
         </div>
         <div className="col-span-1 hidden lg:block">
