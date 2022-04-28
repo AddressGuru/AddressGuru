@@ -38,7 +38,7 @@ const Listing=()=>{
         return(
              <div className="py-10 lg:px-48 sm:px-8 md:px-10 ">
              <h1 className="text-center text-4xl text-blue-500 font-sans font-bold">Recent Listing </h1>
-            {load?  <div className="xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-4 py-4 sidePadding ">   
+            {load?  <div className="xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-4 py-4 sidePadding mt-10">   
                      {data.map((items,i)=>(
                               <ListingCards data={items} image1={img1} image2={img2} image3={img3} image4={img4} image5={img5}/>
                      ))}

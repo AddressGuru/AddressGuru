@@ -3,6 +3,10 @@ import { Context } from "../../Api/MarketPlace"
 import MainMenuData from "../../Asset/Sampledata/HomePageMenu"
 import MarketPlaceCards from "../../Atoms/Cards/MarketPlaceCards"
 import marketplace from "../../Asset/Image/marketplace.png"
+import OwlCarousel from "react-owl-carousel"
+import "owl.carousel/dist/assets/owl.carousel.min.css"
+import "owl.carousel/dist/assets/owl.theme.default.min.css"
+
 const MarketPlace = () => {
 
         // --------------------ContextAPI---------------------
@@ -54,16 +58,17 @@ const MarketPlace = () => {
                 <div className="lg:mb-4 mb-2">
                         <img src={marketplace}/>
                 </div>
+
                         {/* <h1 className="text-center text-blue-500 font-sans font-bold mb-10">Market Place is Here </h1> */}
                         {load ? <div className="lg:px-48 lg:block hidden">
                                 
                                 <div className="px-2 pt-4 mb-0">
                                       
-                                      
+                                      <OwlCarousel items="9" autoWidth="true">
                                         {data.map((items, i) => (
                                         <button onClick={()=>marketData(items.name)} className=" text-gray-500 border-2 px-3 ml-1 rounded-2xl pb-1 text-xs hover:bg-blue-500 hover:text-white focus:text-white focus:scale-90 focus:bg-blue-500">{items.name} ({items.products})</button>
                                 ))}
-                              
+                                </OwlCarousel>
                                 </div>
                                   <hr/>
                                 <p className="mb-1 px-2">Searches in <span className="font-bold">"Dehradun"</span></p>
