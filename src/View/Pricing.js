@@ -6,7 +6,9 @@ const Pricing = () => {
         }, [])
 
         return (
-                <div className="px-40 py-10">
+                <div className="bg-gray-100">
+               <div className="container">
+               <div className="px-40 py-10">
                         <div className="py-10 px-20 Pricing-table ">
 
                                 <Table striped bordered hover>
@@ -88,6 +90,8 @@ const Pricing = () => {
 
                         </div>
                 </div>
+</div>
+               </div>
         )
 }
 

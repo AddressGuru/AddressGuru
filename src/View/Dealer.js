@@ -6,10 +6,12 @@ import HeaderSection from "../Organism/Dealer/HeaderSection";
 const Dealer=()=>{
         return(
                 <>
-<div className="px-60">
+<div className="container ">
+<div className="px-20">
 <HeaderSection/>
 <DataSection/>
 <AboutSection/>
+</div>
 </div>
                 </>
         )

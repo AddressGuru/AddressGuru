@@ -6,22 +6,22 @@ import ListingBenefit from "../Atoms/ListingBenifits";
 
 
 const Login = () => {
-        useEffect(()=>{
+        useEffect(() => {
                 window.scrollTo(0, 0);
-              },[])
+        }, [])
 
         return (
-                <div>
+                <div className="container">
 
-                <div className="grid grid-cols-5 gap-4 px-40">
-<div className=" py-20 col-span-3">
- <ListingBenefit/>   
-</div>
-<div className="px-10 col-span-2">
-<LoginForm/>   <i className="fa fa-check-square-o"></i> 
-        </div>
-                </div>
-                  
+                        <div className="grid grid-cols-6 gap-4 px-20">
+                                <div className=" py-20 col-span-3">
+                                        <ListingBenefit />
+                                </div>
+                                <div className="px-10 col-span-3">
+                                        <LoginForm />   <i className="fa fa-check-square-o"></i>
+                                </div>
+                        </div>
+
                 </div>
 
 

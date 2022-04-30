@@ -7,7 +7,9 @@ const PostingRules=()=>{
   },[])
 
         return(
-                <div className="px-48 bg-gray-100 py-10 ">
+                <div className="bg-gray-100">
+<div className="container">
+<div className="px-20  py-10 ">
                 <div className="mb-20">
 <h1 className="text-blue-500 font-bold">Posting Rules <span>(What not allowed)</span> </h1>
 <hr/>
@@ -70,6 +72,8 @@ const PostingRules=()=>{
     </Accordion.Body>
   </Accordion.Item>
 </Accordion> 
+</div>
+                </div>
 </div>
                 </div>
         )

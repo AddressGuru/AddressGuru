@@ -22,8 +22,9 @@ const Header = () => {
   }
 
   return (
-    <div className="container-fluid px-0 bg-gray-100  z-50 sticky top-0">
-      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-2  ">
+    <div className="bg-gray-100">
+<div className="container px-0 bg-gray-100  z-50 sticky top-0">
+      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-20  ">
         <div className=" lg:pt-3 px-4">
           <SideNav />
         </div>
@@ -58,13 +59,15 @@ const Header = () => {
         </div>
 
         <div className="p-3 col-span-3 hidden lg:block ">
-          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-8 pt-2 pb-2 h-full lg:text-lg lg:px-4 ">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
+          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-2 pt-2 pb-2 h-full lg:text-lg lg:px-2 ">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
           </button>
-          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-8 pt-2 pb-2 h-full lg:text-lg lg:px-4">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
+          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-4 pt-2 pb-2 h-full lg:text-lg lg:px-4">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </div>
       </div>
     </div>
+    </div>
+    
   )
 }
 

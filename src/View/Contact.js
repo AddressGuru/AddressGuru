@@ -8,11 +8,12 @@ const Contact = () => {
                 window.scrollTo(0, 0);
               },[])
         return (
-                <div>
-                <div>
+                <div className="">
+              <div className="container">
+              <div>
                   <img src={contact}/>      
                 </div>
-                <div className="grid grid-cols-2 gap-4 px-40">
+                <div className="grid grid-cols-2 gap-4 px-20">
 <div className=" py-20">
 
                                     
@@ -57,6 +58,7 @@ const Contact = () => {
 <Form/>   
         </div>
                 </div>
+              </div>
                   
                 </div>
 
