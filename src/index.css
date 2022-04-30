@@ -126,7 +126,10 @@ font-size: 15px;
         font-size: 11px !important;
 }
 
-
+.dropSelect #dropdown-basic{
+        width: 100% !important;
+        text-align: right;
+}
 
 
 

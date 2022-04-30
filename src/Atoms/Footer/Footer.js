@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
         return (
-                <div className="bg-white border-t-2">
+                <div className="container bg-white border-t-2 ">
 
-                        <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 lg:px-40 xl:px-40 py-14 mb-10">
-                                <div className="px-5">
+                        <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 lg:px-20 xl:px-20 py-14 mb-10">
+                                <div className="">
                                         <h1 className=" text-xl font-semibold text-left text-gray-800">Address Guru</h1>
                                         <br />
                                         <p className="text-sm text-gray-500">Address Guru Is Online Local Business Directory That Provide Information About Your Daily Needs Just One Click Away. We Get Your Business Listed On It And Grow Online By Reaching Everyone Who Search You Online.</p>
@@ -55,7 +55,7 @@ const Footer = () => {
                         </div>
 
                         {/* second */}
-                        <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-40 xl:px-40 py-10">
+                        <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-20 xl:px-20 py-10">
                                 <div>
                                         <h3 className="text-lg text-gray-800 font-bold">Contact By Phone</h3>
                                         <br />
@@ -103,7 +103,7 @@ const Footer = () => {
 
 
                         {/* third */}
-                        <div className=" lg:block hidden grid grid-cols-4 gap-16 px-40 py-10">
+                        <div className=" lg:block hidden grid grid-cols-4 gap-16 px-40 py-10 lg:px-20 xl:px-20">
                                 <div className="col-span-3 text-xs text-gray-400">
                                         Disclaimer: All the data and information provided on the site are owned by Address Guru and is protected under Personal Data Protection Act 2012 (PDPA) and Section 107 of the Copyright Act. You are prohibited to copying, modifying or making any differences in the content without any authority of being a member of Address Guru.
                                         <br /><br />
@@ -118,7 +118,7 @@ const Footer = () => {
                         </div>
 
                         {/* fourth */}
-                        <div className="lg:block hidden xl:grid xl:grid-cols-3 bg-black text-white px-40 py-4">
+                        <div className="lg:block hidden xl:grid xl:grid-cols-3 bg-black text-white px-40 py-4 lg:px-20 xl:px-20">
                                 <div>
                                         <p> 16,303 Live Ads | 3,102+ Agents </p>
                                 </div>
