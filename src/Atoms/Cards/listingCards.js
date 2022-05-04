@@ -13,7 +13,7 @@ const ListingCards = (props) => {
                                 <div className="col-span-7 py-2 px-2">
                                         <h6 className=" sm:text-gray-600 lg:text-sm mb-0 lg:font-semibold">{data.title}</h6>
                                         <i className=" fa fa-cogs text-sm text-blue-500" /><span className="text-blue-500 text-xs " > Home Service</span>
-                                        <p className="text-xs text-gray-500 font-semibold  text-xs xl:text-xs">4 Days to go</p>
+                                        <p className="text-xs text-gray-500 font-semibold mt-1 text-xs xl:text-xs">4 Days to go</p>
                                 </div>
                         </div>
                 </>

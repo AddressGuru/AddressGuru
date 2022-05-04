@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import adx from "../../Asset/Image/adx.png"
+import payment from "../../Asset/Image/payment.png"
+
+
 const Footer = () => {
         return (
                 <div className=" bg-white border-t-2 ">
@@ -56,7 +60,7 @@ const Footer = () => {
 </div>
                         
 
-                        <div className="container">
+        <div className="container">
         {/* second */}
         <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-20 xl:px-20 py-10">
                                 <div>
@@ -100,16 +104,17 @@ const Footer = () => {
                                 </div>
                                 <div>
                                         <h3 className="text-lg text-gray-800 font-bold"> Partners</h3>
+                                        <img src={adx}/>
 
                                 </div>
                         </div>
         </div>
                         
 
-                        <div className="container">
+        <div className="container">
         {/* third */}
-        <div className=" lg:block hidden grid grid-cols-4 gap-16 px-40 py-10 lg:px-20 xl:px-20">
-                                <div className="col-span-3 text-xs text-gray-400">
+        <div className=" grid grid-cols-4 gap-16 px-40 py-10 lg:px-20 xl:px-20">
+                                <div className="col-span-3  lg:block hidden text-xs text-gray-400">
                                         Disclaimer: All the data and information provided on the site are owned by Address Guru and is protected under Personal Data Protection Act 2012 (PDPA) and Section 107 of the Copyright Act. You are prohibited to copying, modifying or making any differences in the content without any authority of being a member of Address Guru.
                                         <br /><br />
                                         You are free to use our platform for commercial purposes but any other kind of use is strictly prohibited. We are free to ban any type of content or Ad which is not complying to our policies.
@@ -117,10 +122,11 @@ const Footer = () => {
                                         <br />
                                         Before posting anything or becoming a partner of Address Guru, read carefully all the posting policies.
                                 </div>
-                                <div>
-
+                                <div className="col-span-1">
+<img src={payment}/>
                                 </div>
                         </div>
+                        
         </div>
 
                         

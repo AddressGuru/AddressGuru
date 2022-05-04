@@ -130,6 +130,9 @@ font-size: 15px;
         width: 100% !important;
         text-align: right;
 }
+..btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus{
+        border: none;
+}
 
 
 

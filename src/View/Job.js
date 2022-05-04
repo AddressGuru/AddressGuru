@@ -98,9 +98,8 @@ const Job = () => {
                                                                         </div>
                                                                 </div>
                                                                 <div>
-
-                                                                        <button className="btn btn-primary">View Detail</button>
-                                                                        <span className="float-right mt-2 text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
+ 
+                                                                        <span className="float-right text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
                                                                 </div>
                                                         </div>
                                                 ))}
@@ -122,32 +121,32 @@ const Job = () => {
                                                                 <Accordion.Item eventKey="0">
 
                                                                         <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Charted Accountant -  Corporate Audit Services
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>
                                                                                 <hr />
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Legal Contennt Creator Finology Ventures PrivateLimited
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>
                                                                                 <hr />
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Charted Accountant -  Corporate Audit Services
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>
                                                                                 <hr />
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Legal Contennt Creator Finology Ventures PrivateLimited
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>
                                                                                 <hr />
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Charted Accountant -  Corporate Audit Services
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>
                                                                                 <hr />
-                                                                                <div className="px-1">
+                                                                                <div className="px-1 text-sm">
                                                                                         Legal Contennt Creator Finology Ventures PrivateLimited
                                                                                         <p className="text-gray-500 text-sm">1 Job</p>
                                                                                 </div>

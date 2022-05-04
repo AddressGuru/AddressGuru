@@ -28,7 +28,7 @@ const Header = () => {
         <div className=" lg:pt-3 px-4">
           <SideNav />
         </div>
-        <div className="lg:col-span-2 lg:px-4 py-1">
+        <div className="lg:col-span-2  py-1">
           <img src={logo} className="w-full " />
         </div>
         <div className=" pt-2 lg:hidden block">
@@ -59,9 +59,9 @@ const Header = () => {
         </div>
 
         <div className="p-3 col-span-3 hidden lg:block ">
-          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-2 pt-2 pb-2 h-full lg:text-lg lg:px-2 ">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
+          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-2 pt-2 pb-2 h-full lg:text-lg lg:px-2 rounded-sm ">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
           </button>
-          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-4 pt-2 pb-2 h-full lg:text-lg lg:px-4">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
+          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-4 pt-2 pb-2 h-full lg:text-lg lg:px-4 rounded-sm">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </div>
       </div>
