@@ -23,12 +23,12 @@ const Header = () => {
 
   return (
     <div className="bg-gray-100">
-<div className="container px-0 bg-gray-100  z-50 sticky top-0">
+<div className="container px-0   z-50 sticky top-0">
       <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-20  ">
         <div className=" lg:pt-3 px-4">
           <SideNav />
         </div>
-        <div className="lg:col-span-2  py-1">
+        <div className="lg:col-span-2  pt-2">
           <img src={logo} className="w-full " />
         </div>
         <div className=" pt-2 lg:hidden block">
@@ -39,7 +39,7 @@ const Header = () => {
 
             <Dropdown.Menu>
             <div className="bg-white sticky pt-2 -top-5">
-            <input type={`text`} placeholder="Searc Your City " className=" bg-white px-3 py-1  mb-2 w-full border-2 rounded-3xl "/>
+            <input type={`text`} placeholder="Searc Your City " className=" bg-white px-3 py-1  mb-2 w-full  rounded-3xl  "/>
             </div>
            
               {data.sort().map((items, i) => (
@@ -49,19 +49,24 @@ const Header = () => {
           </Dropdown>
         </div>
 
-        <div className="col-span-6 lg:py-3 lg:px-2 pb-1 ">
-          <div className="border-2 bg-white border-gray-400 p-1 lg:flex lg:justify-center pr-1">
+        <div className="col-span-6 lg:p-3  ">
+          <div className="border-2 h-full grid grid-cols-8 bg-white border-gray-400 ">
+            <div className="col-span-3">
             <DropdownSelect/>
-
-            <input type={`text`} placeholder={`Search `} className=" w-4/5 lg:w-3/5 lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0" />
-            <button className=" lg:w-1/5 float-right -top-1 relative  lg:relative lg:top-0  "> <i class="fa fa-search text-sm xl:text-sm float-right text-orange-500 px-2 py-1 rounded-2xl "></i></button>
+            </div>
+            <div className="col-span-4">
+            <input type={`text`} placeholder={`Search `} className=" w-full h-full lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0 searchitem" />
+            </div>
+            <div className="col-span-1">
+            <button className=" w-4/5 bg-blue-600 h-full float-right  relative  lg:relative lg:top-0  "> <i class="fa fa-search text-sm xl:text-lg text-white  "></i></button> 
+            </div>   
           </div>
         </div>
 
         <div className="p-3 col-span-3 hidden lg:block ">
-          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-2 pt-2 pb-2 h-full lg:text-lg lg:px-2 rounded-sm ">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
+          <button className="float-right  ml-2 shadow-xl bg-blue-500 text-white xl:px-2 pt-2 pb-2 h-full lg:text-lg lg:px-2 rounded-sm login">Login  <i class="fa fa-sign-in" aria-hidden="true"></i>
           </button>
-          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-4 pt-2 pb-2 h-full lg:text-lg lg:px-4 rounded-sm">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
+          <button className="float-right  shadow-xl bg-yellow-400 text-gray-700 xl:px-4 pt-2 pb-2 h-full lg:text-lg lg:px-4 rounded-sm PostFree">Post Free Ad <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </div>
       </div>

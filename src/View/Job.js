@@ -4,7 +4,7 @@ import { Accordion } from "react-bootstrap";
 
 
 const Job = () => {
-        const Array = [1, 2, 3, 4, 5, 6, 7, 8]
+        const Array = [1, 2, 3, 4, 5, 6, 7, 8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1]
         return (
                 <>
                 <div className="bg-gray-100">
@@ -83,7 +83,7 @@ const Job = () => {
                                         <div className="col-span-3">
 
                                                 {Array.map((items, i) => (
-                                                        <div className="bg-white px-4 py-4 mt-2 rounded-xl">
+                                                        <div className="bg-white px-4 py-4 mt-2 rounded-sm">
                                                                 <div className="grid grid-cols-6">
                                                                         <div className="col-span-5">
                                                                                 <h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
@@ -94,12 +94,12 @@ const Job = () => {
                                                                                 </div>
                                                                         </div>
                                                                         <div className="col-span-1">
-                                                                                <img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-xl" />
+                                                                                <img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-sm" />
                                                                         </div>
                                                                 </div>
                                                                 <div>
  
-                                                                        <span className="float-right text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> Posted :</b> 1 Week Ago</span>
+                                                                        <span className="float-right text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> </b> 1 Week Ago</span>
                                                                 </div>
                                                         </div>
                                                 ))}

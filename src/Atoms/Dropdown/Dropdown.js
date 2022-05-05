@@ -12,19 +12,24 @@ const DropdownSelect=()=>{
   function citySelect(e) {
     setCity(e)
   }
+
+  console.log(city)
           return (
-           <div className="col-4">
+           <div className="">
  <div className="form-group dropSelect">
-             <Dropdown className="hidden lg:block">
+             <Dropdown className="hidden lg:block py-2">
               <Dropdown.Toggle id="dropdown-basic" >
                 <i className="fa fa-map-marker fa-fw float-left text-sm"></i> <span className="float-left text-sm"> &nbsp;{city}</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-              <input type={`text`} placeholder="Search Your City " className="mx-2 mb-0 p-2   "/>
+              <input type={`text`} placeholder="Search Your City " className="mx-2 mb-0 p-2  searchcity "/>
               <hr className="m-0"/>
-                {options.sort().map((items, i) => (
-                  <Dropdown.Item className="py-2 text-xl" onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-fw"></i> <span >{items}</span></Dropdown.Item>
+              <div className="mb-2">
+
+              </div>
+                {options.sort().filter((items)=>items).map((items, i) => (
+                  <Dropdown.Item className="py-2 text-xl" onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-2x fa-fw"></i> <span >{items}</span></Dropdown.Item>
                 ))}
               </Dropdown.Menu>
             </Dropdown>

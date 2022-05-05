@@ -5,7 +5,8 @@ const MarketPlaceCards = (props) => {
      return (
           <>
 
-               {data.package == 0 ? <div className=" px-2 pt-3 pb-2 bg-white border-b-gray-200 shadow-sm border-b-2 rounded-sm border-b-2 rounded-sm relative ">
+               {data.package == 0 ? 
+               <div className=" px-2 pt-2 pb-2 bg-white border-b-gray-200 shadow-sm border-b-2 rounded-sm border-b-2 rounded-sm relative ">
                     <div className="flex justify-center">
                          <img src={marketlist} className="lg:w-1/2 w-1/2" />
                     </div>

@@ -4,7 +4,7 @@ import ListingSection from "../Organism/CategoriesLanding/ListingSection";
 
 const CategoriesLanding=()=>{
         return(
-                <div>
+                <div className="bg-gray-100">
 <ListingSection/>
                 </div>
         )

@@ -52,7 +52,7 @@ max-width: 338px !important;
         padding-bottom: 1px;
 }
 .dropdown-menu.show{
-        height: 450px !important;
+        height: 360px !important;
         overflow: scroll !important;
 }
 .dropdown-toggle{
@@ -130,12 +130,25 @@ font-size: 15px;
         width: 100% !important;
         text-align: right;
 }
-..btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus{
+.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus{
         border: none;
 }
 
 
+.searchcity:focus{
+        
+        outline: none;
+}
 
+.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus{
+        box-shadow: none;
+}
+
+.searchitem:focus{
+        outline: none;
+        border-left: 2px solid #e5e7eb;
+        color: black;
+}
 
 
 
@@ -159,9 +172,28 @@ height: 100vh !important;
       }
 
 
+.dropdown-item{
+        font-size: 14px !important;
+font-family: Roboto,Arial,Helvetica,sans-serif !important;
+}
 
+.PostFree{
+        border: 1px solid #b5b5b5;
+        background: #fe6d03;
+        color: white;
+        font-weight: 540;
+        text-shadow: 0px 0px 3px #000;
+        font-size: 15px;
+}
 
+.login{
+       
+        background: #2a5aeb;
+        color: white;
+        font-size: 15px;
+        text-shadow: 0px 0px 3px #8f8f8f;
+}
 
-
-
-
+.owl-carousel .owl-stage{
+width: 1400px !important;
+}

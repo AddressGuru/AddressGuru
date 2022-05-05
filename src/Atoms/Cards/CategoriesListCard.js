@@ -7,16 +7,16 @@ const CategoiesListCard=(props)=>{
              <>
 
 
-<div className="grid grid-cols-4 border-2 mb-4 border-gray-200 rounded-xl hover:shadow-2xl ">
+<div className="grid grid-cols-4 border-b-2 bg-white rounded-sm ">
 <div className=" ">
-<img src={listing} className="border-2 shadow-xl border-gray-100 rounded-xl h-full"/>
+<img src={listing} className="border-2 shadow-xl border-gray-100 rounded-sm h-full"/>
 </div>
 <div className="col-span-3 py-2 ml-4">
 <div className="grid grid-cols-4">
 <div className="col-span-3 border-r-2 pr-2">
-<h4 className="text-2xl mb-3 font-semibold">Four Color Print Solution | Printing Service in Dehradun</h4>
-<i className=" fa fa-map-marker fa-fw text-sm text-blue-500"/><span className="text-blue-500 text-sm" > Shop No 19, K C City Centre Dispensary Road, Dehra...</span><br/>
-<i className="fa fa-tags fa-fw text-sm text-blue-500"/><span className="text-blue-500 text-sm" >  Flex Printers</span>
+<h4 className="text-xl mb-3 font-normal text-blue-700">Four Color Print Solution | Printing Service in Dehradun</h4>
+<i className=" fa fa-map-marker fa-fw text-sm text-gray-500"/><span className="text-gray-500 text-sm" > Shop No 19, K C City Centre Dispensary Road, Dehra...</span><br/>
+<i className="fa fa-tags fa-fw text-sm text-gray-500"/><span className="text-gray-500 text-sm" >  Flex Printers</span>
 <p className="text-sm text-gray-500 mb-1 mt-2 font-semibold"><b>Services</b>: printing press, banner printers, printers for visitin, flex printing servic, </p>
        
        

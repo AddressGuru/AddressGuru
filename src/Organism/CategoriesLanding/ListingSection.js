@@ -4,7 +4,7 @@ import listtop from "../../Asset/Image/lsittop.png";
 const ListingSection = () => {
         return (
                 <div className="container">  
-                <div className="px-20 mb-4">
+                <div className="px-16 mb-4 py-2">
                 <img src={listtop} className="w-full "/>
                 </div>
                         
