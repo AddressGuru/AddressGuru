@@ -23,13 +23,13 @@ const Header = () => {
 
   return (
     <div className="bg-gray-100">
-<div className="container px-0   z-50 sticky top-0">
-      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-20  ">
+<div className="container   z-50 sticky top-0">
+      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-16  ">
         <div className=" lg:pt-3 px-4">
           <SideNav />
         </div>
         <div className="lg:col-span-2  pt-2">
-          <img src={logo} className="w-full " />
+          <img src={logo} className="w-full relative right-8 " />
         </div>
         <div className=" pt-2 lg:hidden block">
           <Dropdown className="float-right justify-right">
@@ -49,13 +49,15 @@ const Header = () => {
           </Dropdown>
         </div>
 
-        <div className="col-span-6 lg:p-3  ">
-          <div className="border-2 h-full grid grid-cols-8 bg-white border-gray-400 ">
+        <div className="col-span-6 lg:py-3 lg:pt-5  ">
+          <div className="border-2 h-auto grid grid-cols-8 bg-white border-gray-400 ">
             <div className="col-span-3">
             <DropdownSelect/>
             </div>
             <div className="col-span-4">
-            <input type={`text`} placeholder={`Search `} className=" w-full h-full lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0 searchitem" />
+           <div className="h-full">
+           <input type={`text`} placeholder={`Search `} className=" w-full h-full lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0 searchitem" />
+           </div>
             </div>
             <div className="col-span-1">
             <button className=" w-4/5 bg-blue-600 h-full float-right  relative  lg:relative lg:top-0  "> <i class="fa fa-search text-sm xl:text-lg text-white  "></i></button> 

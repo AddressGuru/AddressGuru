@@ -17,7 +17,7 @@ const DropdownSelect=()=>{
           return (
            <div className="">
  <div className="form-group dropSelect">
-             <Dropdown className="hidden lg:block py-2">
+             <Dropdown className="hidden lg:block">
               <Dropdown.Toggle id="dropdown-basic" >
                 <i className="fa fa-map-marker fa-fw float-left text-sm"></i> <span className="float-left text-sm"> &nbsp;{city}</span>
               </Dropdown.Toggle>
@@ -29,7 +29,7 @@ const DropdownSelect=()=>{
 
               </div>
                 {options.sort().filter((items)=>items).map((items, i) => (
-                  <Dropdown.Item className="py-2 text-xl" onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-2x fa-fw"></i> <span >{items}</span></Dropdown.Item>
+                  <Dropdown.Item className="py-2 text-xl" onClick={(e) => citySelect(items)} href="#"> <i className="fa fa-map-marker fa-lg fa-fw"></i> <span >{items}</span></Dropdown.Item>
                 ))}
               </Dropdown.Menu>
             </Dropdown>

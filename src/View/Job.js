@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
+import jobBanner from "../Asset/Image/jobbanner.jpg"
 
 
 const Job = () => {
@@ -86,20 +87,22 @@ const Job = () => {
                                                         <div className="bg-white px-4 py-4 mt-2 rounded-sm">
                                                                 <div className="grid grid-cols-6">
                                                                         <div className="col-span-5">
-                                                                                <h2 className="text-xl text-blue-500">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
+                                                                                <h2 className="text-xl text-gray-700">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
                                                                                 <p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
                                                                                 <div className="grid grid-cols-3">
-                                                                                        <span className="mb-2"><b> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-                                                                                        <span className="col-span-2"><b><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
+                                                                                        <span className="mb-2"><b className="text-gray-600"> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
+                                                                                        <span className="col-span-2"><b className="text-gray-600"><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
+
                                                                                 </div>
                                                                         </div>
-                                                                        <div className="col-span-1">
+                                                                        <div className="col-span-1 text-center">
                                                                                 <img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-sm" />
+                                                                                <span className="text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> </b> 1 Week Ago</span> 
                                                                         </div>
                                                                 </div>
                                                                 <div>
  
-                                                                        <span className="float-right text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> </b> 1 Week Ago</span>
+                                                                        
                                                                 </div>
                                                         </div>
                                                 ))}
@@ -160,6 +163,10 @@ const Job = () => {
 
 
                                                 </div>
+                                                <div>
+                                                        <img src={jobBanner} width={`100%`}/>
+                                                </div>
+
                                         </div>
                                 </div>
                         </div>

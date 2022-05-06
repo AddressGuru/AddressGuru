@@ -32,7 +32,7 @@ const CategoiesListCard=(props)=>{
         <i className="fa fa-star text-yellow-400"></i>
 <button className="bg-green-700 px-2 ml-1 rounded-sm text-sm text-white">5</button>
 </div>
-<Link to="/third"><button className="btn btn-primary ">View  More</button></Link>
+<Link to="/third"><button className=" border-2 border-blue-300 text-xs py-1 px-4 hover:bg-blue-500 hover:text-white  rounded-sm">View  More</button></Link>
 
 </div>
 </div>

@@ -69,7 +69,7 @@ const MarketPlace = () => {
                                                 <OwlCarousel items="9" autoWidth="true">
                                                         {data.map((items, i) => (
                                                                 <div className=" pt-4 mb-0">
-                                                                <button onClick={() => marketData(items.name)} className=" text-gray-500 border-2 px-3 ml-1 rounded-2xl pb-1 text-xs hover:bg-blue-500 hover:text-white focus:text-white focus:scale-90 focus:bg-blue-500">{items.name} ({items.products})</button>
+                                                                <button onClick={() => marketData(items.name)} className=" text-gray-500 border-2 px-3 ml-1 pb-1 rounded-2xl  text-sm hover:bg-blue-500 hover:text-white focus:text-white focus:scale-90 focus:bg-blue-500">{items.name} ({items.products})</button>
                                                                 </div>
                                                         ))}
                                                 </OwlCarousel>
