@@ -5,6 +5,7 @@ import LandingFourthRight from "../../Atoms/Layouts/LandingFourthRight";
 import LandingSecondLeft from "../../Atoms/Layouts/LandingSecondLeft";
 import LandingSecondRight from "../../Atoms/Layouts/LandingSecondRight";
 import LandingThirdRight from "../../Atoms/Layouts/LandingThirdRight";
+import TumbnailSlider from "../../Atoms/Layouts/LandingTumbnailSlider"
 
 const LandingPage = () => {
         return (
@@ -17,6 +18,9 @@ const LandingPage = () => {
                                         </div>
                                         <div className="grid grid-cols-3 gap-4 mt-2">
                                                 <div className="col-span-2">
+                                                <div>
+                                                      <TumbnailSlider/>
+                                                </div>
                                                         <div>
                                                                 <LandingFirstLeft />
                                                         </div>

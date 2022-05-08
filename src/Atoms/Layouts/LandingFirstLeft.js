@@ -1,39 +1,13 @@
-import Landing from "../../Asset/Image/landing1.png"
-import Landing2 from "../../Asset/Image/landing2.png"
-import Landing3 from "../../Asset/Image/landing3.png"
-import Carousel from 'react-bootstrap/Carousel'
+
 
 const LandingFirstLeft = () => {
   return (
     <div>
+     
 
       <div className="grid grid-cols-1 bg-white py-4 px-4">
         <div>
-          <div>
-            <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={Landing}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={Landing2}
-                  alt="Second slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={Landing3}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-            </Carousel>
-          </div>
+
           <br />
           <h3 className="font-semibold">About Us
           </h3>
@@ -49,7 +23,7 @@ const LandingFirstLeft = () => {
           </h3>
           <hr />
           <p className=" font-semibold">
-          Astrologer SK Shastri ji provides below services
+            Astrologer SK Shastri ji provides below services
           </p>
           <div className="px-4 grid grid-cols-2">
             <div>

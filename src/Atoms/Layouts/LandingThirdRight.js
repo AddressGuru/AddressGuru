@@ -3,7 +3,7 @@ const LandingThirdRight = () => {
  
         return (
           <div>
-      <div className="grid grid-cols-1 bg-white px-4 py-4 ">
+      <div className="grid grid-cols-1 bg-white  ">
       <div className="bg-gray-100 border-2 border-white shadow-2xl py-12 px-4">
         <h2>Send Enquery</h2>
         <hr/>

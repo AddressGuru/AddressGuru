@@ -1,11 +1,47 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import jobBanner from "../Asset/Image/jobbanner.jpg"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Job = () => {
-        const Array = [1, 2, 3, 4, 5, 6, 7, 8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1]
+        const Count = [1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,13]
+        const freeAllbatch = []
+        const blogsts = true;
+        if (blogsts == true) {
+            const chunkSize = 10
+            const arr = Count
+            const groups = arr
+                .map((e, i) => {
+                    return i % chunkSize === 0 ? arr.slice(i, i + chunkSize) : null
+                })
+                .filter((e) => {
+                    return e
+                })
+            freeAllbatch.push(groups)
+           
+        }
+
+        const [pagination_st, setPaginationst] = useState(0)
+        const [parinum, setParinum] = useState([])
+    
+        function setPaginationLeft(e) {
+            if (pagination_st == 0) {
+            } else {
+                setPaginationst(pagination_st - 1)
+            }
+        }
+    
+        function setPaginationRight(e) {
+            if (pagination_st == freeAllbatch[0].length - 1) {
+            } else {
+                setPaginationst(pagination_st + 1)
+            }
+        }
+    
+    
+        console.log("check",freeAllbatch)
         return (
                 <>
                 <div className="bg-gray-100">
@@ -83,8 +119,11 @@ const Job = () => {
 
                                         <div className="col-span-3">
 
-                                                {Array.map((items, i) => (
-                                                        <div className="bg-white px-4 py-4 mt-2 rounded-sm">
+                                              
+{freeAllbatch[0].length>0 ? (
+        freeAllbatch[0][pagination_st].map((item,index)=>(
+                <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6*index} animateOnce={true}  className='col-12 mb-4'>
+                <div className="bg-white px-4 py-4 mt-2 rounded-sm">
                                                                 <div className="grid grid-cols-6">
                                                                         <div className="col-span-5">
                                                                                 <h2 className="text-xl text-gray-700">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
@@ -105,8 +144,195 @@ const Job = () => {
                                                                         
                                                                 </div>
                                                         </div>
+                                        </ScrollAnimation>
+        ))
+):""}
+
+{freeAllbatch[0].length > 0 ? (
+                                <div className='col-12 pt-3'>
+                                    <nav className="text-center">
+                                        <ul className="pagination justify-content-center blog_bxrowpagi flex-wrap mb-0">
+                                            <li
+                                                className={
+                                                    'nv page-item itemnv-1' +
+                                                    (pagination_st == 0
+                                                        ? ' disabled'
+                                                        : '')
+                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                }
+                                            >
+                                                <a
+                                                    className="page-link"
+                                                    href={void 0}
+                                                    onClick={() => {
+                                                        setPaginationst(0)
+                                                    }}
+                                                    aria-label="Previous"
+                                                >
+                                                    <span aria-hidden="true">
+                                                        &laquo;
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li
+                                                className={
+                                                    'nv page-item itemnv-2' +
+                                                    (pagination_st == 0
+                                                        ? ' disabled'
+                                                        : '')
+                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                }
+                                            >
+                                                <a
+                                                    className="page-link"
+                                                    href={void 0}
+                                                    onClick={(e) => {
+                                                        setPaginationLeft(e)
+                                                    }}
+                                                    aria-label="Previous"
+                                                >
+                                                    <span aria-hidden="true">‹</span>
+                                                </a>
+                                            </li>
+
+                                            {/*------ pagination map ------*/}
+                                            {new Array(freeAllbatch[0].length - 1)
+                                                .fill()
+                                                .map((_, index) => (
+                                                    <li
+                                                        className={
+                                                            'page-item dots' +
+                                                            (pagination_st == index
+                                                                ? ' active'
+                                                                : '') +
+                                                            (pagination_st == index
+                                                                ? ' activedot'
+                                                                : '') +
+                                                            (pagination_st - 1 == index
+                                                                ? ' activedot'
+                                                                : '') +
+                                                            (pagination_st + 1 == index
+                                                                ? ' activedot'
+                                                                : '') +
+                                                            (pagination_st - 2 == index
+                                                                ? ' activedot'
+                                                                : '') +
+                                                            (pagination_st + 2 == index
+                                                                ? ' activedot'
+                                                                : '')
+                                                        }>
+                                                        <a
+                                                            className="page-link"
+                                                            href={void 0}
+                                                            onClick={() => {
+                                                                setPaginationst(index)
+                                                            }}
+                                                        >
+                                                            {index + 1}
+                                                        </a>
+                                                    </li>
                                                 ))}
 
+
+
+
+                                            {/* last item */}
+                                            <li
+                                                className={
+                                                    'page-item dots' +
+                                                    (pagination_st ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' active'
+                                                        : '') +
+                                                    (pagination_st ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' activedot'
+                                                        : '') +
+                                                    (pagination_st - 1 ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' activedot'
+                                                        : '') +
+                                                    (pagination_st + 1 ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' activedot'
+                                                        : '') +
+                                                    (pagination_st - 2 ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' activedot'
+                                                        : '') +
+                                                    (pagination_st + 2 ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' activedot'
+                                                        : '')
+                                                }
+                                            >
+                                                <a
+                                                    className="page-link"
+                                                    href={void 0}
+                                                    onClick={() => {
+                                                        setPaginationst(
+                                                            freeAllbatch[0].length - 1
+                                                        )
+                                                    }}
+                                                >
+                                                    {freeAllbatch[0].length}
+                                                </a>
+                                            </li>
+                                            {/*------ end pagination map ------*/}
+
+                                            <li className='w-100 d-block d-lg-none'></li>
+                                            <li
+                                                className={
+                                                    'nv page-item itemnv-3' +
+                                                    (pagination_st ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' disabled'
+                                                        : '')
+                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                }
+                                            >
+                                                <a
+                                                    className="page-link"
+                                                    href={void 0}
+                                                    onClick={(e) => {
+                                                        setPaginationRight(e)
+                                                    }}
+                                                    aria-label="Next"
+                                                >
+                                                    <span aria-hidden="true">›</span>
+                                                </a>
+                                            </li>
+                                            <li
+                                                className={
+                                                    'nv page-item itemnv-4' +
+                                                    (pagination_st ==
+                                                        freeAllbatch[0].length - 1
+                                                        ? ' disabled'
+                                                        : '')
+                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                }
+                                            >
+                                                <a
+                                                    className="page-link"
+                                                    href={void 0}
+                                                    onClick={() => {
+                                                        setPaginationst(
+                                                            freeAllbatch[0].length - 1
+                                                        )
+                                                    }}
+                                                    aria-label="Next"
+                                                >
+                                                    <span aria-hidden="true">
+                                                        &raquo;
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            ) : (
+                                ''
+                            )}                                    
 
 
 
