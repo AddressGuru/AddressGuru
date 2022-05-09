@@ -6,6 +6,7 @@ import LandingSecondLeft from "../../Atoms/Layouts/LandingSecondLeft";
 import LandingSecondRight from "../../Atoms/Layouts/LandingSecondRight";
 import LandingThirdRight from "../../Atoms/Layouts/LandingThirdRight";
 import TumbnailSlider from "../../Atoms/Layouts/LandingTumbnailSlider"
+import LandingVideo from "../../Atoms/Layouts/LandingVideo";
 
 const LandingPage = () => {
         return (
@@ -20,8 +21,11 @@ const LandingPage = () => {
                                                 <div className="col-span-2">
                                                 <div>
                                                       <TumbnailSlider/>
+                                                      <div className="text-right">
+                                                      <span className="text-xs "><b>ADD  ID-</b> 12345762127854 </span>
+                                                      </div>
                                                 </div>
-                                                        <div>
+                                                        <div className="mt-2">
                                                                 <LandingFirstLeft />
                                                         </div>
                                                         <div>
@@ -34,6 +38,9 @@ const LandingPage = () => {
                                                         </div>
                                                         <div>
                                                                 <LandingSecondRight />
+                                                        </div>
+                                                        <div>
+                                                               <LandingVideo/>
                                                         </div>
                                                         <div>
                                                                 <LandingThirdRight />

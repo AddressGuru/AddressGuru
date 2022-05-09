@@ -6,6 +6,7 @@ import Footer from "./Atoms/Footer/Footer";
 import Header from "./Atoms/Header/Header";
 import AboutUs from "./View/AboutUs";
 import CategoriesLanding from "./View/CategoriesLanding";
+import Claim from "./View/Claim";
 import Contact from "./View/Contact";
 import Dealer from "./View/Dealer";
 import Index from "./View/Index";
@@ -14,6 +15,7 @@ import Job from "./View/Job";
 import Landing from "./View/Landing";
 import Login from "./View/Login";
 import MarketLanding from "./View/MarketLanding";
+import NotFound from "./View/NotFound";
 import Partner from "./View/Partner";
 import PostingRules from "./View/PostingRules";
 import Pricing from "./View/Pricing";
@@ -43,6 +45,8 @@ const App = () => {
                                 <Route path="/job" element={<Job />} />
                                 <Route path="/partner" element={<Partner />} />
                                 <Route path="/dealer" element={<Dealer />} />   
+                                <Route path="/claim" element={<Claim />} />   
+                                <Route path="*" element={<NotFound />} />   
                         </Routes>
                         <Footer />
                 </>

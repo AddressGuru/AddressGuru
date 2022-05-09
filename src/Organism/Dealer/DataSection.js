@@ -15,14 +15,14 @@ const DataSection = () => {
                         <div>
 
                                 {/* Header */}
-                                <div className="grid grid-cols-2 gap-8 bg-gray-100 text-2xl py-2 px-2 mt-4">
+                                <div className="grid grid-cols-2 gap-8 bg-gray-100 text-2xl py-2 px-2 mt-2">
                                         <div className="text-gray-500">
-                                                <p className="mb-0"><b className="text-blue-500 font-semibold">Home</b> / <b className="text-blue-500 font-semibold">Products</b> / Accessories</p>
+                                                <p className="mb-0 text-sm"><b className="text-blue-500 font-semibold">Home</b> / <b className="text-blue-500 font-semibold">Products</b> / Accessories</p>
                                         </div>
                                         <div>
                                                 <div className="float-right ">
-                                                        <span className="text-sm float-right">
-                                                                <select name="cars" className="px-1 py-2 text-xl btn btn-primary" id="cars">
+                                                        <span className="text-xs float-right">
+                                                                <select name="cars" className=" text-xs btn btn-primary sorted" id="cars">
                                                                         <option value="volvo">Sort by</option>
                                                                         <option value="saab">Low to High</option>
                                                                         <option value="mercedes">High to Low</option>
@@ -33,17 +33,17 @@ const DataSection = () => {
                                 </div>
 
                                 {/* DeatailData */}
-                                <div className="grid grid-cols-4 gap-8 mt-4">
-                                        <div className=" px-2   ">
+                                <div className="grid grid-cols-4 gap-8 mt-2">
+                                        <div className="">
 
 
                                                 <div className="border-2 px-2 py-2 dealer ">
                                                         <p>Range:</p>
                                                         <input type="range" id="volume" name="volume" min="0" max="11" />
                                                         <p>Price:</p>
-                                                        <Accordion defaultActiveKey={`0`} className="bg-white shadow-sm mt-10" >
+                                                        <Accordion defaultActiveKey={`0`} className="bg-white shadow-sm mt-0" >
                                                                 <Accordion.Item eventKey="0">
-                                                                        <Accordion.Header>
+                                                                        <Accordion.Header className="">
                                                                                 <span className="text-gray-700 text-lg font-semibold"> Property Type </span>
                                                                         </Accordion.Header>
                                                                         <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
@@ -89,7 +89,7 @@ const DataSection = () => {
 
                                         </div>
                                         <div className="col-span-3">
-                                                <div className="grid grid-cols-3 gap-8 p-4 bg-gray-200">
+                                                <div className="grid grid-cols-3 gap-6 p-2 bg-gray-200">
                                                         {DATAMAP.map((items, i) => (
                                                                 <DealerCard image={items} />
                                                         ))} 
@@ -99,7 +99,7 @@ const DataSection = () => {
                                                 </div>
                                                
 
-                                                <div className="grid grid-cols-3 gap-8 p-4 bg-gray-200">
+                                                <div className="grid grid-cols-3 gap-6 p-4 bg-gray-200">
                                                         {DATAMAP.map((items, i) => (
                                                                 <DealerCard image={items} />
                                                         ))}
@@ -118,7 +118,11 @@ const DataSection = () => {
                                                 <div className="p-4 bg-gray-200">
                                                
                                                 </div>
-                                              
+                                        
+                                        <div className="bg-gray-200 px-4">
+                                               
+                                        </div>
+                                            
                                         </div>
 
                                 </div>

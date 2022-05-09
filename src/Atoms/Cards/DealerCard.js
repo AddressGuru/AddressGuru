@@ -4,11 +4,11 @@ const DealerCard=(props)=>{
         return(
                 <div className="shadow-xl bg-white">
                 <div className="relative">
-                <button className="view_dealar_buttom absolute right-2 top-2">8 People Intrested</button>
+                <button className="view_dealar_buttom absolute right-2 top-2 ">8 People Intrested</button>
 <img src={props.image}/>
                 </div>
-                <div className="pt-4 pb-12 px-3">
-                        <h2 className="text-gray-800 text-xl font-semibold">1 BHK Available for Rent</h2>
+                <div className="pt-4 pb-1 px-3">
+                        <h2 className="text-gray-800 text-lg font-semibold">1 BHK Available for Rent</h2>
                        <div className="grid grid-cols-2">
 <div>
 <p>Apartmen</p>
@@ -22,7 +22,7 @@ const DealerCard=(props)=>{
 <p>12,0000</p>
 </div>
 <div >
-<button className="view_dealar_buttom">VIEW</button>
+<button className="view_button">VIEW</button>
 </div>
                        </div>
 
