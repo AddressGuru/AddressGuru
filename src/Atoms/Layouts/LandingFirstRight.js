@@ -9,17 +9,9 @@ const LandingFirstRight = () => {
           <p><i className="fa fa-globe fa-fw yoi"></i> Visit Website</p>
           <p><i className="fa fa-tags fa-fw yoi"></i>  Astrologer </p>
 
-          <h5>
-          <span>5 </span>
-            <i className="fa fa-star text-yellow-500"></i>
-            <i className="fa fa-star text-yellow-500"></i>
-            <i className="fa fa-star text-yellow-500"></i>
-            <i className="fa fa-star text-yellow-500"></i>
-            <i className="fa fa-star text-yellow-500"></i>
-            <span className="text-sm font-bold"> (1 Reviews)</span>
-          </h5>
+         
           {/* <button className="bg-yellow-500 w-2/5 rounded-lg"><i className="fa fa-eye"></i> Views</button> */}
-          <div className="rounded-lg "><button className="bg-yellow-500 px-4 rounded-l-lg shadow-lg"> <i className="fa fa-eye"></i> Views</button><button className="bg-gray-500 text-white px-2 rounded-r-lg shadow-lg">240</button></div>
+          <div className="rounded-lg "><button className="bg-yellow-500 px-4 rounded-l-lg shadow-lg"> <i className="fa fa-eye"></i> Views</button><button className="bg-gray-500 text-white px-2 rounded-r-lg shadow-lg">245540</button></div>
           <div className="mt-4">
             <p className=" font-bold">Share On:</p>
           </div>

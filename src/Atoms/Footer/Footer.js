@@ -123,7 +123,7 @@ const Footer = () => {
                                         Before posting anything or becoming a partner of Address Guru, read carefully all the posting policies.
                                 </div>
                                 <div className="col-span-1">
-<img src={payment}/>
+<img src={payment}  width={`100%`} height={`100%`}/>
                                 </div>
                         </div>
                         

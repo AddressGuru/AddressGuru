@@ -31,10 +31,10 @@ const Category=()=>{
 </div>
 <div className="lg:col-span-2 col-span-6 md:col-span-6 lg:pt-2   ">
 <div className="p-1 border-2 border-gray">
-<img src={advertise} className="w-full"/>
+<img src={advertise} className="w-full" width={`100%`} height={`100%`}/>
 </div>
 <div className="p-1 border-2 border-gray">
-<img src={banner} className="w-full"/>
+<img src={banner} className="w-full" width={`100%`} height={`100%`}/>
 </div>
 </div>
             </div>

@@ -8,7 +8,7 @@ const MarketPlaceCards = (props) => {
                {data.package == 0 ? 
                <div className=" px-2 pt-2 pb-2 bg-white border-b-gray-200 shadow-sm border-b-2 rounded-sm border-b-2 rounded-sm relative ">
                     <div className="flex justify-center">
-                         <img src={marketlist} className="lg:w-1/2 w-1/2" />
+                         <img src={marketlist} className="lg:w-1/2 w-1/2" width={`auto`} height={`100%`} />
                     </div>
                     <div className="px-2 mb-2 mt-2 relative pb-1">
                         

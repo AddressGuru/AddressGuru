@@ -29,7 +29,7 @@ const Header = () => {
           <SideNav />
         </div>
         <div className="lg:col-span-2  pt-2">
-          <img src={logo} className="w-full relative right-8 " />
+          <img src={logo} className="w-full relative right-8 " width={`100%`} height={`100%`}/>
         </div>
         <div className=" pt-2 lg:hidden block">
           <Dropdown className="float-right justify-right">

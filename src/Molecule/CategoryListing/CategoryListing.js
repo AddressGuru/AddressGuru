@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const CategoryListing = () => {
-        const Count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+        const Count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,]
         const freeAllbatch = []
         const blogsts = true;
         if (blogsts == true) {
@@ -49,7 +49,7 @@ const CategoryListing = () => {
 
                                 {freeAllbatch[0].length > 0 ? (
                                         freeAllbatch[0][pagination_st].map((item, index) => (
-                                                <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-12 mb-4'>
+                                                <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-12 mb-2'>
                                                         <CategoiesListCard />
                                                         
                                                 </ScrollAnimation>

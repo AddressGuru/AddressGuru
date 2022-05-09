@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import listing from "../../Asset/Image/listing.png"
+import listing from "../../Asset/Image/landing1.png"
 
 const CategoiesListCard=(props)=>{
 
@@ -9,7 +9,7 @@ const CategoiesListCard=(props)=>{
 
 <div className="grid grid-cols-4 border-b-2 bg-white rounded-sm ">
 <div className=" ">
-<img src={listing} className="border-2 shadow-xl border-gray-100 rounded-sm h-full"/>
+<img src={listing} className=" shadow-xl border-gray-100 rounded-sm h-full"/>
 </div>
 <div className="col-span-3 py-2 ml-4">
 <div className="grid grid-cols-4">
