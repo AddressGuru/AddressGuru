@@ -41,7 +41,8 @@ const LandingFirstRight = () => {
       </div>
       <div className="px-2">
         <button className="float-left text-xs text-red-500 font-bold" onClick={handleShow}><i className="fa fa-exclamation-circle"></i> Report</button>
-       <Link to="/claim"> <span className="float-right text-xs text-blue-500 font-bold">*Claim - Sahastra Architects ...</span></Link>
+       <span className="text-xs float-right "><b>ADD  ID-</b> 12345762127854 </span>
+                                                             
       </div>
 
 

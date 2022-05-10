@@ -1,4 +1,5 @@
 import React from "react";
+import LandingClaim from "../../Atoms/Layouts/LandingClaim";
 import LandingFirstLeft from "../../Atoms/Layouts/LandingFirstLeft";
 import LandingFirstRight from "../../Atoms/Layouts/LandingFirstRight";
 import LandingFourthRight from "../../Atoms/Layouts/LandingFourthRight";
@@ -14,17 +15,15 @@ const LandingPage = () => {
                         <div className="container ">
                                 <div className="px-20 py-20">
                                         <div className="grid grid-cols-1 bg-white pt-2 px-4">
-                                                <h1 className="font-bold">Mi note 4 for sale (in good condition)</h1>
+                                                <h1 className="font-bold text-3xl">Mi note 4 for sale (in good condition)</h1>
                                                 <p>Dehradun Uttrakhand,</p>
                                         </div>
                                         <div className="grid grid-cols-3 gap-4 mt-2">
                                                 <div className="col-span-2">
-                                                <div>
-                                                      <TumbnailSlider/>
-                                                      <div className="text-right">
-                                                      <span className="text-xs "><b>ADD  ID-</b> 12345762127854 </span>
-                                                      </div>
-                                                </div>
+                                                        <div>
+                                                                <TumbnailSlider />
+                                                               
+                                                        </div>
                                                         <div className="mt-2">
                                                                 <LandingFirstLeft />
                                                         </div>
@@ -40,14 +39,20 @@ const LandingPage = () => {
                                                                 <LandingSecondRight />
                                                         </div>
                                                         <div>
-                                                               <LandingVideo/>
+                                                                <LandingVideo />
                                                         </div>
                                                         <div>
                                                                 <LandingThirdRight />
+
                                                         </div>
                                                         <div>
+                                                                <LandingClaim />
+                                                        </div>
+                                                        <div>
+
                                                                 <LandingFourthRight />
                                                         </div>
+
 
                                                 </div>
                                         </div>
