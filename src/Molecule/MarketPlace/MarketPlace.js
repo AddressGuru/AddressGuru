@@ -62,7 +62,7 @@ const MarketPlace = () => {
 
                                 {/* <h1 className="text-center text-blue-500 font-sans font-bold mb-10">Market Place is Here </h1> */}
                                 {load ? <div className="container">
-                                <div className="lg:px-16 xl:px-16+ lg:block hidden">
+                                <div className="lg:px-40 xl:px-40 lg:block hidden">
 
                                         
 
@@ -84,7 +84,7 @@ const MarketPlace = () => {
                                         </div>}
 
                                 {status ? <div className="container">
-                                <div className="lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 grid grid-cols-2 lg:px-16 xl:px-16
+                                <div className="lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 grid grid-cols-2 lg:px-40 xl:px-40
                         
                         
                          gap-4 lg:py-6 xl:py-16 sidePadding">

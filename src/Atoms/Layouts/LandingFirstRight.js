@@ -12,13 +12,13 @@ const LandingFirstRight = () => {
     <div>
       <div className="grid grid-cols-1 ">
         <div className="bg-white px-4 py-4 border-gray-200 border-2">
-          <p className="text-blue-500 font-semibold"><i className="fa fa-phone fa-fw yoi"></i> +91-9915587720</p>
-          <p className="text-blue-500 font-semibold"><i className="fa fa-globe fa-fw yoi"></i> Visit Website</p>
-          <p ><i className="fa fa-tags fa-fw yoi"></i>  Astrologer </p>
+          <p className="text-blue-500 text-xl font-semibold"><i className="fa fa-phone fa-fw yoi"></i> +91-9915587720</p>
+          <p className="text-blue-500 text-xl font-semibold"><i className="fa fa-globe fa-fw yoi"></i> Visit Website</p>
+          <p ><i className="fa fa-tags text-xl fa-fw yoi"></i>  Astrologer </p>
 
          
           {/* <button className="bg-yellow-500 w-2/5 rounded-lg"><i className="fa fa-eye"></i> Views</button> */}
-          <div className="rounded-lg "><button className="bg-yellow-500 px-4 pb-1 rounded-l-lg shadow-lg"> <i className="fa fa-eye"></i> Views</button><button className="bg-gray-500 pb-1 text-white px-2 rounded-r-lg shadow-lg">245540</button></div>
+          <div className="rounded-lg "><button className="bg-yellow-500 px-4 pb-1 text-sm rounded-l-lg shadow-lg"> <i className="fa fa-eye fa-sm"></i> Views</button><button className="bg-gray-500 pb-1 text-sm text-white px-2 rounded-r-lg shadow-lg">245540</button></div>
           <div className="mt-4">
             <p className=" font-bold">Share On:</p>
           </div>
@@ -41,7 +41,7 @@ const LandingFirstRight = () => {
       </div>
       <div className="px-2">
         <button className="float-left text-xs text-red-500 font-bold" onClick={handleShow}><i className="fa fa-exclamation-circle"></i> Report</button>
-       <span className="text-xs float-right "><b>ADD  ID-</b> 12345762127854 </span>
+       <span className="text-xs float-right "><b>AD  ID-</b> 12345762127854 </span>
                                                              
       </div>
 
@@ -61,9 +61,10 @@ const LandingFirstRight = () => {
             </h5>
 
           </div>
-          <div className="px-4 h-40 overflow-scroll">
-            <marquee direction="up" loop="true" onmouseover="this.stop()">
-              <h4 className="text-lg font-bold mb-0">Shalu</h4>
+          <div className="px-4 h-96 ">
+            <marquee direction="up"  className="h-96">
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
               <div class="geek2">
                 <i className="fa fa-star text-yellow-500"></i>
                 <i className="fa fa-star text-yellow-500"></i>
@@ -74,7 +75,99 @@ const LandingFirstRight = () => {
                 <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
                 <hr />
               </div>
+             </div>
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
+
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
+
+
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
+
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
+
+
+             <div>
+             <h4 className="text-lg font-bold mb-0">Shalu</h4>
+              <div class="geek2">
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <i className="fa fa-star text-yellow-500"></i>
+                <span className="text-sm font-semibold"> 9 months ago</span>
+                <p className="text-sm">A well-known astrologer with over 25 years of experience.</p>
+                <hr />
+              </div>
+             </div>
             </marquee>
+
+            
 
           </div>
         </div>

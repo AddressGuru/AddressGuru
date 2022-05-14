@@ -8,7 +8,7 @@ import { Carousel } from "react-bootstrap";
 const ThumbnailSlider=()=>{
         return(
                 <div>
-                        <div className="grid grid-cols-1 bg-white  ">
+                        <div className="grid grid-cols-1 bg-white p-4 ">
 <div className="thumbnailslider">
   <Carousel >
     <Carousel.Item>

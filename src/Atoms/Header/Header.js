@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className="bg-gray-100 shadow-xl ">
 <div className="container   z-50 sticky top-0">
-      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-16  ">
+      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-40  ">
         <div className=" lg:pt-3 px-4">
           <SideNav />
         </div>

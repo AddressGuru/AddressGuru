@@ -37,7 +37,7 @@ const Listing=()=>{
 // --------------------------useeffect------------------------
         return(
              <div className="container">
-<div className="py-10 lg:px-20 xl:px-20">
+<div className="py-10 lg:px-40 xl:px-40">
              <h1 className="text-center text-4xl text-blue-500 font-sans font-bold">Recent Listing </h1>
             {load?  <div className="xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-4 py-4 sidePadding mt-10">   
                      {data.map((items,i)=>(

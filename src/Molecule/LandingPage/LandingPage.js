@@ -20,11 +20,9 @@ const LandingPage = () => {
                                         </div>
                                         <div className="grid grid-cols-3 gap-4 mt-2">
                                                 <div className="col-span-2">
-                                                        <div>
-                                                                <TumbnailSlider />
-                                                               
-                                                        </div>
-                                                        <div className="mt-2">
+                                                       
+                                                        <div className="">
+                                                        <TumbnailSlider />
                                                                 <LandingFirstLeft />
                                                         </div>
                                                         <div>

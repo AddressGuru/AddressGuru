@@ -8,7 +8,7 @@ const Footer = () => {
         return (
                 <div className=" bg-white border-t-2 ">
 <div className="container">
-<div className="lg:grid lg:grid-cols-3 grid grid-cols-1 lg:px-20 xl:px-20 py-14 mb-10">
+<div className="lg:grid lg:grid-cols-3 grid grid-cols-1 lg:px-40 xl:px-40 py-14 mb-10">
                                 <div className="">
                                         <h1 className=" text-xl font-semibold text-left text-gray-800">Address Guru</h1>
                                         <br />
@@ -32,22 +32,22 @@ const Footer = () => {
                                 <div className=" hidden lg:block lg:px-20 px-12 mt-2">
                                         <h3 className="text-xl font-semibold text-gray-800"> <i class="fa fa-info fa-fw" /> Important Links</h3>
                                         <div className="px-1 py-3 text-gray-500 text-sm ">
-                                                <Link to='/about' className="no-underline text-gray-600" >   <p> <i className="fa fa-chevron-right fa-fw" /> About Us</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/contact'>  <p> <i className="fa fa-chevron-right fa-fw" />Contact Us</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/partner'>  <p> <i className="fa fa-chevron-right fa-fw" />Become a partner</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/postingrules'>  <p> <i className="fa fa-chevron-right fa-fw" />Posting Rules</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/market'>  <p> <i className="fa fa-chevron-right fa-fw" />Market Place</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/dealer'>  <p> <i className="fa fa-chevron-right fa-fw" />Dealer</p></Link>
+                                                <Link to='/about' className="no-underline text-blue-600" >   <p> <i className="fa fa-chevron-right text-black text-black fa-fw" /> About Us</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/contact'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Contact Us</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/partner'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Become a partner</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/postingrules'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Posting Rules</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/market'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Market Place</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/dealer'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Dealer</p></Link>
                                         </div>
                                 </div>
 
                                 <div className="hidden lg:block lg:px-20 px-12 mt-2">
                                         <h3 className="text-xl font-semibold text-gray-800"> <i class="fa fa-search fa-fw" /> Quick Links</h3>
                                         <div className="px-2 py-3 text-gray-500 text-sm">
-                                                <p> <i className="fa fa-chevron-right fa-fw" />Post Ad</p>
-                                                <Link className="no-underline text-gray-600" to='/pricing'>   <p> <i className="fa fa-chevron-right fa-fw" />Our Plans</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/InfregmentPolicy'>  <p> <i className="fa fa-chevron-right fa-fw" />Infringement Policy</p></Link>
-                                                <Link className="no-underline text-gray-600" to='/privacyPolicy'>  <p> <i className="fa fa-chevron-right fa-fw" />Privacy Policy</p></Link>
+                                        <Link className="no-underline text-blue-600" to='/pricing'> <p> <i className="fa fa-chevron-right text-black fa-fw" />Post Ad</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/pricing'>   <p> <i className="fa fa-chevron-right text-black fa-fw" />Our Plans</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/InfregmentPolicy'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Infringement Policy</p></Link>
+                                                <Link className="no-underline text-blue-600" to='/privacyPolicy'>  <p> <i className="fa fa-chevron-right text-black fa-fw" />Privacy Policy</p></Link>
                                         </div>
 
 
@@ -62,7 +62,7 @@ const Footer = () => {
 
         <div className="container">
         {/* second */}
-        <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-20 xl:px-20 py-10">
+        <div className="hidden lg:block lg:grid lg:grid-cols-4 grid grid-cols-1 lg:px-40 xl:px-40 py-10">
                                 <div>
                                         <h3 className="text-lg text-gray-800 font-bold">Contact By Phone</h3>
                                         <br />
@@ -113,7 +113,7 @@ const Footer = () => {
 
         <div className="container">
         {/* third */}
-        <div className=" grid grid-cols-4 gap-16 px-40 py-10 lg:px-20 xl:px-20">
+        <div className=" grid grid-cols-4 gap-16 px-40 py-10 lg:px-40 xl:px-40">
                                 <div className="col-span-3  lg:block hidden text-xs text-gray-400">
                                         Disclaimer: All the data and information provided on the site are owned by Address Guru and is protected under Personal Data Protection Act 2012 (PDPA) and Section 107 of the Copyright Act. You are prohibited to copying, modifying or making any differences in the content without any authority of being a member of Address Guru.
                                         <br /><br />

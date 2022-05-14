@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingVideo=()=>{
         return(
-                <div className="bg-white  mb-2">
+                <div className="bg-white  mb-2 px-2 pb-2">
                 <p className="px-3 pt-2 pb-0 mb-0 text-2xl">
                         Video   
                        
