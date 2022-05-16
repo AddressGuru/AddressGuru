@@ -12,7 +12,7 @@ const MarketPlaceCards = (props) => {
                     </div>
                     <div className="px-2 mb-2 mt-2 relative pb-1">
                         
-                         <p className="text-left mt-0 lg:text-xs h-8 text-xs ">{data.title}</p>
+                         <p className="text-left mt-0 lg:text-xs h-11 text-xs break-all ">{data.title}</p>
                          <h3 className="lg:text-lg text-lg font-semibold mb-0 lg:font-bold">{data.amount == null ? data.price : <span>₹ {data.amount}</span>}</h3>
                     </div>
 

@@ -13,7 +13,7 @@ const TrustedCard = (props) => {
                       <p className="text-gray-600 sm:text-sm">
                      {props.content}
                       </p>
-                      <button className="btn btn-primary">View Details</button>
+                      <button className="btn btn-primary mt-4 lg:mt-0">View Details</button>
                       </div>
              </div>
 

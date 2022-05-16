@@ -44,8 +44,8 @@ const CategoryListing = () => {
         console.log("check", freeAllbatch)
 
         return (
-                <div className="grid grid-cols-4 gap-4 px-40">
-                        <div className="col-span-3">
+                <div className="grid grid-cols-4 gap-4 lg:px-40">
+                        <div className="lg:col-span-3 col-span-4">
 
                                 {freeAllbatch[0].length > 0 ? (
                                         freeAllbatch[0][pagination_st].map((item, index) => (
@@ -243,7 +243,7 @@ const CategoryListing = () => {
                                 )}
 
                         </div>
-                        <div className="">
+                        <div className="hidden lg:block">
                                 <div>
                                         <button className="btn btn-primary w-full mb-2">
                                                 Search Filter <i className="fa fa-filter"></i>

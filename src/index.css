@@ -158,7 +158,7 @@
 
 
 .MainMenuTitle {
-        font-size: 14px;
+        font-size: 10px;
 }
 
 .MainMenuCount {
@@ -279,4 +279,10 @@
 .sorted {
         padding: 1px !important;
         font-size: 14px !important;
+}
+.stars-review{
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        height: 100%;
 }
