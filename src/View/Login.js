@@ -13,7 +13,7 @@ const Login = () => {
         return (
                 <div className="container">
 
-                        <div className="grid grid-cols-6 gap-4 px-20">
+                        <div className="grid grid-cols-6 gap-4 px-40">
                                 <div className=" py-20 col-span-3">
                                         <ListingBenefit />
                                 </div>

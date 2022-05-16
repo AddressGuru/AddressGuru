@@ -11,7 +11,7 @@ const Partner = () => {
   return (
     <div className="bg-gray-100 partner">
     <div className="container ">
-    <div className="grid grid-cols-7 gap-16 py-10 px-20   ">
+    <div className="grid grid-cols-7 gap-16 py-10 px-40   ">
         <div className="col-span-2">
           <PartnerForm />
         </div>

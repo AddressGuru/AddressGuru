@@ -13,7 +13,7 @@ const Contact = () => {
               <div>
                   <img src={contact}/>      
                 </div>
-                <div className="grid grid-cols-2 gap-4 px-20">
+                <div className="grid grid-cols-2 gap-4 px-40">
 <div className=" py-20">
 
                                     

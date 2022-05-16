@@ -7,7 +7,7 @@ const Infringementpolicy=()=>{
         return(
                 <div className="bg-gray-100">
                 <div className="container">
-                <div className="px-20 bg-gray-100 py-10">
+                <div className="px-40 bg-gray-100 py-10">
 <h1 className="text-blue-500 font-bold">Infregment Policy</h1>
 <hr/>
 <p className="text-sm">

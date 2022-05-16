@@ -46,7 +46,7 @@ const Job = () => {
         <>
             <div className="bg-gray-100">
                 <div className="container ">
-                    <div className="grid grid-cols-5 gap-4  mt-2 py-10 px-20">
+                    <div className="grid grid-cols-5 gap-4  mt-2 py-10 px-40">
                         <div>
                             <div>
                                 <div className="px-1  mb-0">

@@ -44,7 +44,7 @@ const CategoryListing = () => {
         console.log("check", freeAllbatch)
 
         return (
-                <div className="grid grid-cols-4 gap-4 px-16">
+                <div className="grid grid-cols-4 gap-4 px-40">
                         <div className="col-span-3">
 
                                 {freeAllbatch[0].length > 0 ? (

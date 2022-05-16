@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import { Offcanvas } from "react-bootstrap";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import shivam from "../Asset/Image/employee.png"
 import Accordion from 'react-bootstrap/Accordion'
 
@@ -35,12 +36,12 @@ const SideNav = () => {
          </Accordion.Header>
     <Accordion.Body>
     <ul className="px-0">
-            <li className=" mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-info fa-fw"></i> About Us</li>
-            <li className=" mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-phone fa-fw hover:cursor-pointer"></i> Contact Us</li>
-            <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-gavel fa-fw hover:cursor-pointer"></i> Posting Rules</li>
-            <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-credit-card fa-fw hover:cursor-pointer"></i> Our Plans</li>
-            <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-cogs fa-fw hover:cursor-pointer"></i> Infringement Policy</li>
-            <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-gear fa-fw hover:cursor-pointer"></i> Privacy Policy</li>
+            <Link to="/about"><li className=" mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-info fa-fw"></i> About Us</li></Link>
+            <Link to="/contact"><li className=" mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-phone fa-fw hover:cursor-pointer"></i> Contact Us</li></Link>
+            <Link to="/postingrules"> <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-gavel fa-fw hover:cursor-pointer"></i> Posting Rules</li></Link>
+            <Link to="/pricing"> <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-credit-card fa-fw hover:cursor-pointer"></i> Our Plans</li></Link>
+            <Link to="/InfregmentPolicy"><li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-cogs fa-fw hover:cursor-pointer"></i> Infringement Policy</li></Link>
+            <Link to="/privacyPolicy"> <li className="  mb-1 hover:cursor-pointer hover:text-gray-800 hover:bg-white  border-2 border-white  rounded-lg p-1 shadow-2xl"><i className="fa fa-gear fa-fw hover:cursor-pointer"></i> Privacy Policy</li></Link>
           </ul>
     </Accordion.Body>
   </Accordion.Item>

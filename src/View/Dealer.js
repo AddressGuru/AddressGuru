@@ -7,7 +7,7 @@ const Dealer=()=>{
         return(
                 <>
 <div className="container ">
-<div className="px-20">
+<div className="px-40">
 <HeaderSection/>
 <DataSection/>
 <AboutSection/>

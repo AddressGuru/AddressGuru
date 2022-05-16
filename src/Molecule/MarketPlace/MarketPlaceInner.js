@@ -80,7 +80,7 @@ const MarketPlaceInner = () => {
                         </div> : <div></div>}
 
                         <div className="container">
-                                <div className="grid grid-cols-4 gap-4 pb-10 px-20 ">
+                                <div className="grid grid-cols-4 gap-4 pb-10 px-40 ">
 
                                         {load ?
                                                 <div>
