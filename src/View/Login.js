@@ -13,12 +13,12 @@ const Login = () => {
         return (
                 <div className="container">
 
-                        <div className="grid grid-cols-6 gap-4 px-40">
-                                <div className=" py-20 col-span-3">
+                        <div className="grid grid-cols-6 gap-4 lg:px-40">
+                                <div className=" lg:py-20 pt-4 lg:col-span-3 col-span-6 px-4 lg:px-0">
                                         <ListingBenefit />
                                 </div>
-                                <div className="px-10 col-span-3">
-                                        <LoginForm />   <i className="fa fa-check-square-o"></i>
+                                <div className="lg:px-10 lg:col-span-3 col-span-6">
+                                        <LoginForm />   
                                 </div>
                         </div>
 

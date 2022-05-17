@@ -8,17 +8,17 @@ const Pricing = () => {
         return (
                 <div className="bg-gray-100">
                <div className="container">
-               <div className="px-40 py-10">
-                        <div className="py-10 px-20 Pricing-table ">
+               <div className="lg:px-40 py-10">
+                        <div className="py-10 lg:px-20 Pricing-table ">
 
                                 <Table striped bordered hover>
-                                        <tr className="text-3xl Pricing-Heading ">
-                                                <th className="p-4">₹ Pricing Table </th>
-                                                <th className="pt-4"><p className="text-2xl font-semibold"><i className="fa fa-flash"></i> Basic </p>
-                                                        <p className="text-2xl font-normal text-blue-500">₹1299.00 /yearly</p></th>
+                                        <tr className="lg:text-3xl text-lg Pricing-Heading ">
+                                                <th className="p-4 lg:text-2xl text-sm">₹ Pricing Table </th>
+                                                <th className="pt-4"><p className="lg:text-2xl text-lg font-semibold"><i className="fa fa-flash"></i> Basic </p>
+                                                        <p className="lg:text-2xl text-sm font-normal text-blue-500">₹1299.00 /yearly</p></th>
                                                 <th className="pt-4">
-                                                        <p className="text-2xl font-semibold"><i className="fa fa-diamond"></i> Professional </p>
-                                                        <p className="text-2xl font-normal text-blue-500">₹4999.00 /lifetime</p></th>
+                                                        <p className="lg:text-2xl text-sm font-semibold"><i className="fa fa-diamond"></i> Professional </p>
+                                                        <p className="lg:text-2xl text-sm font-normal text-blue-500">₹4999.00 /lifetime</p></th>
                                         </tr>
                                         <tbody>
                                                 <tr>

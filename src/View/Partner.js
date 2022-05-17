@@ -11,11 +11,11 @@ const Partner = () => {
   return (
     <div className="bg-gray-100 partner">
     <div className="container ">
-    <div className="grid grid-cols-7 gap-16 py-10 px-40   ">
-        <div className="col-span-2">
+    <div className="grid grid-cols-7 gap-16 py-10 lg:px-40   ">
+        <div className="lg:col-span-2 col-span-7">
           <PartnerForm />
         </div>
-        <div className="col-span-4">
+        <div className="lg:col-span-4 col-span-7">
           <div className="bg-blue-500 text-white text-3xl p-4 font-bold">
             More than 3108 partners registered
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Accordion } from "react-bootstrap";
 import DealerCard from "../../Atoms/Cards/DealerCard";
 import img1 from "../../Asset/Image/1.jpg"
@@ -6,8 +6,14 @@ import img2 from "../../Asset/Image/2.jpg"
 import img3 from "../../Asset/Image/3.jpg"
 import adds2 from "../../Asset/Image/ads2.jpg"
 import ad2 from '../../Asset/Image/ad2.png'
-const DataSection = () => {
+import { Modal } from "react-bootstrap";
 
+const DataSection = () => {
+        const [Job, setJOb] = useState(false);
+        const [Result, setResult] = useState(false);
+        const [Locality, setLocality] = useState(false);
+
+       
 
         const DATAMAP = [img1, img2, img3, img1, img2, img3]
         return (
@@ -32,9 +38,120 @@ const DataSection = () => {
                                         </div>
                                 </div>
 
+
+                                {/* FILTER MOBILE  */}
+                                <div className="grid grid-cols-3 gap-2 lg:hidden pb-4">
+                                <div>
+                                        <button className="btn bg-blue-200 text-sm w-full" onClick={()=>setJOb(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Job Type</span>
+                                        </button>
+                                        <Modal show={Job} onHide={()=>setJOb(false)}>
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-blue-200 border-1 border-blue-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Job Type</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setJOb(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+
+                                <div>
+                                        <button className="btn bg-green-200 text-sm w-full" onClick={()=>setResult(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Top Result</span>
+                                        </button>
+                                        <Modal show={Result} onHide={()=>setResult(false)}>
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-green-200 border-1 border-green-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Top Result</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; at ghosi gali... </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; at Ghosi Gali... </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Dehradun..</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Ajabpur Kalan </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setResult(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+
+                                <div>
+                                        <button className="btn bg-yellow-200 text-sm w-full" onClick={()=>setLocality(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Locality</span>
+                                        </button>
+                                        <Modal show={Locality} onHide={()=>setLocality(false)}>
+                                                
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-yellow-200 border-1 border-yellow-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Locality</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setLocality(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+                               
+                        </div>
+
+
+
+
+
                                 {/* DeatailData */}
-                                <div className="grid grid-cols-4 gap-8 mt-2">
-                                        <div className="">
+                                <div className="grid grid-cols-4 gap-2 lg:gap-8  mt-2">
+                                        <div className="hidden lg:block">
 
 
                                                 <div className="border-2 px-2 py-2 dealer ">
@@ -88,8 +205,8 @@ const DataSection = () => {
 
 
                                         </div>
-                                        <div className="col-span-3">
-                                                <div className="grid grid-cols-3 gap-6 p-2 bg-gray-200">
+                                        <div className="col-span-4 lg:col-span-3 ">
+                                                <div className="grid grid-cols-2 md:grid md:grid-cols-3 lg:gap-6 gap-2 p-2 lg:p-4 bg-gray-200">
                                                         {DATAMAP.map((items, i) => (
                                                                 <DealerCard image={items} />
                                                         ))} 
@@ -99,7 +216,7 @@ const DataSection = () => {
                                                 </div>
                                                
 
-                                                <div className="grid grid-cols-3 gap-6 p-4 bg-gray-200">
+                                                <div className="grid grid-cols-2 md:grid md:grid-cols-3 lg:gap-6 gap-2 p-2 lg:p-4 bg-gray-200">
                                                         {DATAMAP.map((items, i) => (
                                                                 <DealerCard image={items} />
                                                         ))}
@@ -109,7 +226,7 @@ const DataSection = () => {
                                                 <img src={ad2}/>
                                                 </div>
 
-                                                <div className="grid grid-cols-3 gap-8 p-4 bg-gray-200">
+                                                <div className="grid grid-cols-2 md:grid md:grid-cols-3 lg:gap-6 gap-2 p-2 lg:p-4 bg-gray-200">
                                                         {DATAMAP.map((items, i) => (
                                                                 <DealerCard image={items} />
                                                         ))}

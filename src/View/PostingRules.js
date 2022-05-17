@@ -9,9 +9,9 @@ const PostingRules=()=>{
         return(
                 <div className="bg-gray-100">
 <div className="container">
-<div className="px-40  py-10 ">
+<div className="lg:px-40 px-4  py-10 ">
                 <div className="mb-20">
-<h1 className="text-blue-500 font-bold">Posting Rules <span>(What not allowed)</span> </h1>
+<h1 className="text-blue-500 font-bold mb-2">Posting Rules <span>(What not allowed)</span> </h1>
 <hr/>
 
 <li>   Listing items that are illegal to buy, own, import or sell in the country of your residence.</li>
@@ -29,9 +29,9 @@ const PostingRules=()=>{
 </div>
 
 <div>
-<h1 className="text-blue-500 font-bold">Help & Support</h1>
+<h1 className="text-blue-500 font-bold  mb-2">Help & Support</h1>
 <hr/>
-<h3 className="text-semibold">F&Q</h3>
+<h3 className="text-semibold mt-2">F&Q</h3>
 
 <Accordion defaultActiveKey={`2`} >
   <Accordion.Item eventKey="2">
