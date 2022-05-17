@@ -223,6 +223,11 @@
                 top: 1% !important;
                 height: 100vh !important;
         }
+        .stars-review{
+                
+                display: none !important;
+               
+        }
 }
 
 
@@ -283,6 +288,6 @@
 .stars-review{
         align-items: center;
         justify-content: center;
-        display: flex !important;
+        display: flex;
         height: 100%;
 }

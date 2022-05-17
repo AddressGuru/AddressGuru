@@ -33,7 +33,7 @@ const CategoiesListCard = (props) => {
                                                         </div>
                                                 </div>
                                                 </div>
-                                                <div className="h-full grid grid-cols-1 lg:block hidden content-center stars-review ">
+                                                <div className="h-full grid grid-cols-1  content-center stars-review ">
                                                         <div className="mb-2 justify-center px-2 w-full">
                                                                 <i className="fa fa-star text-yellow-400 text-xs lg:text-sm"></i>
                                                                 <i className="fa fa-star text-yellow-400 text-xs lg:text-sm"></i>
