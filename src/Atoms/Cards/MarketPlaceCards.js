@@ -8,21 +8,20 @@ const MarketPlaceCards = (props) => {
                {data.package == 0 ? 
                <div className=" px-2 pt-2 pb-2 bg-white border-b-gray-200 shadow-sm border-b-2 rounded-sm border-b-2 rounded-sm relative ">
                     <div className="flex justify-center">
-                         <img src={marketlist} className="lg:w-1/2 w-1/2" width={`auto`} height={`100%`} />
+                         <img src={marketlist} className="lg:w-1/2 w-full" width={`auto`} height={`100%`} />
                     </div>
                     <div className="px-2 mb-2 mt-2 relative pb-1">
-                        
-                         <p className="text-left mt-0 lg:text-xs h-11 text-xs break-all ">{data.title}</p>
-                         <h3 className="lg:text-lg text-lg font-semibold mb-0 lg:font-bold">{data.amount == null ? data.price : <span>₹ {data.amount}</span>}</h3>
+                         <p className="text-left mt-0 lg:text-xs h-14 lg:h-12 text-xs break-all ">{data.title}</p>
                     </div>
+                    <h3 className="lg:text-lg text-sm font-semibold mb-0 lg:font-bold ml-2">{data.amount == null ? data.price : <span>₹ {data.amount}</span>}</h3>
 
                     <div className=" w-full 2xl:grid 2xl:grid-cols-3 grid grid-cols-1">
-                    <div className="col-span-2 mb-0 text-right lg:text-right 2xl:text-left ">
+                    <div className="col-span-2 mb-0 text-left lg:text-right 2xl:text-left ">
                               <button className=" font-semibold text-gray-500 px-2 rounded-sm very-small MarketListFooter ">
                                    <i className="fa fa-map-marker text-gray-800" /> {data.city}, {data.state}
                               </button>
                          </div>
-                         <div className="col-span-1 text-right  ">
+                         <div className="col-span-1 text-right lg:block hidden ">
                               <button className=" font-semibold text-gray-800  rounded-sm very-small  ">
                                    <i className="fa fa-calendar text-blue-500 MarketListFooter " /> 1 Year Ago
                               </button>

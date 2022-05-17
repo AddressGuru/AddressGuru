@@ -8,18 +8,19 @@ import LandingSecondRight from "../../Atoms/Layouts/LandingSecondRight";
 import LandingThirdRight from "../../Atoms/Layouts/LandingThirdRight";
 import TumbnailSlider from "../../Atoms/Layouts/LandingTumbnailSlider"
 import LandingVideo from "../../Atoms/Layouts/LandingVideo";
+import MobileMenu from "../../Atoms/MobileMenu";
 
 const LandingPage = () => {
         return (
                 <div className="bg-gray-100">
                         <div className="container ">
-                                <div className="px-40 py-20">
+                                <div className="lg:px-40 py-20">
                                         <div className="grid grid-cols-1 bg-white pt-2 px-4">
                                                 <h1 className="font-bold text-3xl">Mi note 4 for sale (in good condition)</h1>
                                                 <p>Dehradun Uttrakhand,</p>
                                         </div>
                                         <div className="grid grid-cols-3 gap-4 mt-2">
-                                                <div className="col-span-2">
+                                                <div className="col-span-3 lg:col-span-2">
                                                        
                                                         <div className="">
                                                         <TumbnailSlider />
@@ -29,7 +30,7 @@ const LandingPage = () => {
                                                                 <LandingSecondLeft />
                                                         </div>
                                                 </div>
-                                                <div>
+                                                <div className="col-span-3 lg:col-span-1">
                                                         <div>
                                                                 <LandingFirstRight />
                                                         </div>
@@ -57,6 +58,7 @@ const LandingPage = () => {
 
                                 </div>
                         </div>
+                        <MobileMenu/>
                 </div>
         )
 }

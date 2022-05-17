@@ -12,12 +12,15 @@ const Privacy = () => {
   return (
     <div className="bg-gray-100 ">
       <div className="container">
-        <div className="px-40 bg-gray-100 py-10">
-          <h1 className="text-blue-500 font-bold">Privacy Policies</h1>
+        <div className="lg:px-40 bg-gray-100 py-10">
+          <div className="px-3">
+          <h1 className="text-blue-500 text-3xl font-bold mb-1">Privacy Policies</h1>
           <hr />
-          <h3 className="text-semibold">WHAT INFORMATION DO WE COLLECT?</h3>
+          <h3 className="text-semibold text-sm lg:text-lg font-bold my-2">WHAT INFORMATION DO WE COLLECT?</h3>
           <p className="text-sm">When you visit the Site you may provide us with two types of information: personal information you knowingly choose to disclose that is collected on an individual basis and website use information collected on an aggregate basis as you and others browse the Site. </p>
-          <Accordion defaultActiveKey={`2`} >
+         
+          </div>
+           <Accordion defaultActiveKey={`2`} >
             <Accordion.Item eventKey="2">
               <Accordion.Header>
                 <h3 className="text-gray-800 text-lg ">  1. Personal Information You Choose to Provide</h3>

@@ -29,7 +29,7 @@ const CategoiesListCard = (props) => {
                                                         </div>  
                                                         <div className="grid grid-cols-2">
 <div><button className=" w-full py-1 rounded-sm text-black border-1 border-orange-600 text-sm bg-white">Call Now</button></div>
-<div className="px-2"><button className="w-full py-1 rounded-sm text-white border-1 border-blue-600 text-sm bg-blue-600">View Details</button></div>
+<div className="px-2"><Link to="/third"><button className="w-full py-1 rounded-sm text-white border-1 border-blue-600 text-sm bg-blue-600">View Details</button></Link></div>
                                                         </div>
                                                 </div>
                                                 </div>

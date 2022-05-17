@@ -228,6 +228,10 @@
                 display: none !important;
                
         }
+        .break-all{
+                font-size: 10px;
+                color: gray;
+        }
 }
 
 

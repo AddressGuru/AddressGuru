@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import jobBanner from "../Asset/Image/jobbanner.jpg"
 import ScrollAnimation from 'react-animate-on-scroll'
+import MobileMenu from "../Atoms/MobileMenu";
+import { Modal } from "react-bootstrap";
 
 
 const Job = () => {
@@ -41,13 +43,127 @@ const Job = () => {
     }
 
 
+    const [Job, setJOb] = useState(false);
+    const [Result, setResult] = useState(false);
+    const [Locality, setLocality] = useState(false);
+
+   
+
     console.log("check", freeAllbatch)
     return (
         <>
+
+
+
             <div className="bg-gray-100">
+          
                 <div className="container ">
-                    <div className="grid grid-cols-5 gap-4  mt-2 py-10 px-40">
-                        <div>
+                <div className="grid grid-cols-3 gap-2 lg:hidden  py-4">
+                                <div>
+                                        <button className="btn bg-blue-200 text-xs w-full" onClick={()=>setJOb(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Job Type</span>
+                                        </button>
+                                        <Modal show={Job} onHide={()=>setJOb(false)}>
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-blue-200 border-1 border-blue-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Job Type</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setJOb(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+
+                                <div>
+                                        <button className="btn bg-green-200 text-xs w-full" onClick={()=>setResult(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Top Result</span>
+                                        </button>
+                                        <Modal show={Result} onHide={()=>setResult(false)}>
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-green-200 border-1 border-green-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Top Result</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; at ghosi gali... </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; at Ghosi Gali... </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Dehradun..</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Ajabpur Kalan </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setResult(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+
+                                <div>
+                                        <button className="btn bg-yellow-200 text-xs w-full" onClick={()=>setLocality(true)}>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Locality</span>
+                                        </button>
+                                        <Modal show={Locality} onHide={()=>setLocality(false)}>
+                                                
+                                                <Modal.Body>
+                                                <Accordion defaultActiveKey={`0`} className="bg-yellow-200 border-1 border-yellow-200" >
+                                                        <Accordion.Item eventKey="0">
+                                                                <Accordion.Header>
+                                                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Locality</span>
+                                                                </Accordion.Header>
+                                                                <Accordion.Body className="px-2 pt-2 bg-white text-gray-800 ">
+                                                                        <div className="px-1">
+
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun</span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+                                                                                <div className="mb-1"> <input type={`checkbox`} name="Product" /><span className="font-semibold text-gray-600 text-sm">&nbsp; Top 5 Flex Printers in Dehradun </span></div>
+
+                                                                        </div>
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                </Accordion>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                        <button variant="secondary" onClick={()=>setLocality(false)}>
+                                                                Close
+                                                        </button>
+
+                                                </Modal.Footer>
+                                        </Modal>
+                                </div>
+                               
+                        </div>
+                    <div className="grid grid-cols-5 gap-4 lg:py-10 lg:px-40">
+                        <div className="lg:block hidden">
                             <div>
                                 <div className="px-1  mb-0">
                                     <span className="font-semibold text-sm">Home/ Market Place</span>
@@ -117,26 +233,26 @@ const Job = () => {
                         </div>
 
 
-                        <div className="col-span-3">
+                        <div className="col-span-5 lg:col-span-3">
 
 
                             {freeAllbatch[0].length > 0 ? (
                                 freeAllbatch[0][pagination_st].map((item, index) => (
                                     <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-12 mb-4'>
-                                        <div className="bg-white px-4 py-4 mt-2 rounded-sm">
-                                            <div className="grid grid-cols-6">
+                                        <div className="bg-white relative px-4 py-4 mt-2 rounded-sm">
+                                            <div className="lg:grid lg:grid-cols-6 grid grid-cols-7">
                                                 <div className="col-span-5">
-                                                    <h2 className="text-xl text-gray-700">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
-                                                    <p className="text-sm text-gray-500">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
-                                                    <div className="grid grid-cols-3">
-                                                        <span className="mb-2"><b className="text-gray-600"> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
-                                                        <span className="col-span-2"><b className="text-gray-600"><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
-
+                                                    <h2 className="lg:text-xl text-sm text-gray-700">Accountant Supervisore / Executive (Hotel BAckground Onlu)</h2>
+                                                    <p className="lg:text-sm text-xs text-gray-500 mt-1 mb-2">Lp villa  by LP Hotel a uni of M/S Motel Place </p>
+                                                    <br/>
+                                                    <div className="grid grid-cols-3 bottom-2 absolute">
+                                                        <span className="mb-2 lg:col-span-1 col-span-2 text-xs lg:text-sm"><b className="text-gray-600  "> <i class="fa fa-briefcase" aria-hidden="true"></i> Job Type: </b> Full Time </span>
+                                                        <span className="lg:col-span-2 col-span-3 text-xs lg:text-sm "><b className="text-gray-600 "><i class="fa fa-money" aria-hidden="true"></i> Salary: </b> 10,000 -15,000 / Monthly </span>
                                                     </div>
                                                 </div>
-                                                <div className="col-span-1 text-center">
+                                                <div className="col-span-2 lg:col-span-1 text-center">
                                                     <img src="https://www.addressguru.in/images/594022280.crdownload" className="w-100 border-2 rounded-sm" />
-                                                    <span className="text-gray-500 text-sm"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> </b> 1 Week Ago</span>
+                                                    <span className="text-gray-500 text-xs lg:text-lg"> <b> <i class="fa fa-calendar" aria-hidden="true"></i> </b> 1 Week Ago</span>
                                                 </div>
                                             </div>
                                             <div>
@@ -340,7 +456,7 @@ const Job = () => {
                         </div>
 
 
-                        <div>
+                        <div className="lg:block hidden ">
                             <div>
                                 <div className="px-1  mb-0">
                                     <span className="font-semibold text-sm">Popular in Dehradun</span>
@@ -397,6 +513,7 @@ const Job = () => {
                     </div>
                 </div>
             </div>
+            <MobileMenu/>
         </>
     )
 }
