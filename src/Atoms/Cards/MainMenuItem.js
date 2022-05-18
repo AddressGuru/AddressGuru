@@ -13,7 +13,7 @@ const MainMenuItem=(props)=>{
      <div className=" lg:p-2 p-1  rounded-xl custom-menu-css">
 <div className="flex justify-center">
 
-<img src={props.image} className="lg:w-1/2 w-1/3" width={`100%`} height={`100%`} />
+<img src={props.image} className="lg:w-1/2 w-2/5" width={`100%`} height={`100%`} />
 </div>
 <h6 className="text-center MainMenuTitle2    font-semibold mt-2 mb-0">{props.name}</h6>   
 <p className="text-center MainMenuCount mb-0">(4300)</p>

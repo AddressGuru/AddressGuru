@@ -18,7 +18,7 @@ const MarketPlaceCards = (props) => {
                     <div className="col-span-2 mb-0 text-left lg:text-right 2xl:text-left  ">
                     <h3 className="lg:text-lg text-sm font-semibold mb-0 lg:font-bold ml-2">{data.amount == null ? data.price : <span>₹ {data.amount}</span>}</h3>
 
-                              <button className=" font-semibold text-gray-500 px-2 rounded-sm very-small  ">
+                              <button className="  text-gray-500 px-2 rounded-sm very-small  ">
                                    <i className="fa fa-map-marker text-gray-800" /> {data.city}, {data.state}
                               </button>
                          </div>

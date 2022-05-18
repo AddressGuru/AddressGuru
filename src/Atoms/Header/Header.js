@@ -26,7 +26,7 @@ const Header = () => {
     <div className="bg-gray-100 shadow-xl ">
 <div className="container   z-50 sticky top-0">
       <div className="grid grid-cols-12 lg:grid lg:grid-cols-12 lg:px-40 p-2 lg:py-1 ">
-        <div className="col-span-3 lg:col-span-1 lg:pt-3 px-4">
+        <div className="col-span-3 lg:col-span-1 lg:pt-3">
           <SideNav />
         </div>
         <div className=" col-span-6 lg:col-span-2  lg:pt-3 px-4">
@@ -52,10 +52,10 @@ const Header = () => {
 
         <div className="col-span-12 lg:col-span-6 lg:py-3 lg:pt-5  mt-3 mb-2 lg:mt-0 lg:mb-0">
           <div className="border-2 h-auto grid grid-cols-8 bg-white border-gray-400 ">
-            <div className="col-span-3">
+            <div className="col-span-3 hidden lg:block">
             <DropdownSelect/>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-7 lg:col-span-4">
            <div className="h-full">
            <input type={`text`} placeholder={`Search `} className=" w-full h-full lg:border-l-2 pl-2 top-0 bg-white relative focus:border-0 searchitem" />
            </div>

@@ -225,7 +225,9 @@ text-align: left;
         }
 
         #dropdown-basic {
-                font-size: 10px !important;
+                font-size: 13px !important;
+                padding-right: 0px;
+                padding-top: 0px;
         }
 
         .dropdown-menu.show {
