@@ -10,7 +10,7 @@ const MainMenuItem=(props)=>{
 
 
 {props.image?<Link to="/job"  className="no-underline text-gray-800">
-     <div className=" lg:p-2 p-1  rounded-xl custom-menu-css">
+     <div className=" lg:p-2 p-1  rounded-lg custom-menu-css">
 <div className="flex justify-center">
 
 <img src={props.image} className="lg:w-1/2 w-2/5" width={`100%`} height={`100%`} />

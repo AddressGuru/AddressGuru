@@ -14,9 +14,10 @@ const MobileMenu = () => {
                                                 <p className="text-xs text-gray-500 font-semibold mb-0 mt-2 menuMobile">Jobs</p>
                                         </div>
                                         <div className="text-center pt-2 border-2">
-                                             <i className="fa fa-plus-circle fa-3x relative text-red-500 bottom-6"></i>
-                                                <p className="text-xs text-gray-500 font-semibold mb-0 -mt-4 menuMobile">Post Free Ad</p>
+                                                <i className="fa fa-plus fa-lg"></i>
+                                                <p className="text-xs text-gray-500 font-semibold mb-0 mt-2 menuMobile">Post Free Ad</p>
                                         </div>
+                                        
                                         <div className="text-center pt-2 border-2">
                                                 <i className="fa fa-shopping-cart fa-lg"></i>
                                                 <p className="text-xs text-gray-500 font-semibold mb-0 mt-2 menuMobile">Marketplace</p>
