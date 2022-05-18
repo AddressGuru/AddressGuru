@@ -209,6 +209,20 @@
         .sidePadding {
                 padding: 10px;
         }
+        .MainMenuTitle {
+                font-size: 10px;
+        }
+        .MainMenuTitle2{
+                font-size: 9px;
+        }
+        .menuMobile{
+                font-size: 10px;
+        }
+        .MarketListFooter{
+                bottom: 8px;
+position: relative;
+text-align: left;
+        }
 
         #dropdown-basic {
                 font-size: 10px !important;
@@ -239,6 +253,12 @@
         .view_dealar_buttom{
                 font-size: 10px;
                 display: none;
+        }
+        .very-small{
+                text-align: left;
+        }
+        .icon-category{
+                font-size: 30px;
         }
 }
 

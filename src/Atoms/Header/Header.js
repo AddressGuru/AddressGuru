@@ -25,14 +25,14 @@ const Header = () => {
   return (
     <div className="bg-gray-100 shadow-xl ">
 <div className="container   z-50 sticky top-0">
-      <div className="grid grid-cols-3 lg:grid lg:grid-cols-12 py-1 px-40  ">
-        <div className=" lg:pt-3 px-4">
+      <div className="grid grid-cols-12 lg:grid lg:grid-cols-12 lg:px-40 p-2 lg:py-1 ">
+        <div className="col-span-3 lg:col-span-1 lg:pt-3 px-4">
           <SideNav />
         </div>
-        <div className="lg:col-span-2  pt-2">
-       <Link to="/">   <img src={logo} className="w-full relative right-8 " width={`100%`} height={`100%`}/></Link>
+        <div className=" col-span-6 lg:col-span-2  lg:pt-3 px-4">
+       <Link to="/">   <img src={logo} className="w-full relative right-3 lg:right-8 " width={`100%`} height={`100%`}/></Link>
         </div>
-        <div className=" pt-2 lg:hidden block">
+        <div className=" col-span-3 lg:col-span-1 pt-2 lg:hidden block">
           <Dropdown className="float-right justify-right">
             <Dropdown.Toggle id="dropdown-basic" >
               <i className="fa fa-map-marker text-xs fa-fw"></i> {city}
@@ -50,7 +50,7 @@ const Header = () => {
           </Dropdown>
         </div>
 
-        <div className="col-span-6 lg:py-3 lg:pt-5  ">
+        <div className="col-span-12 lg:col-span-6 lg:py-3 lg:pt-5  mt-3 mb-2 lg:mt-0 lg:mb-0">
           <div className="border-2 h-auto grid grid-cols-8 bg-white border-gray-400 ">
             <div className="col-span-3">
             <DropdownSelect/>
