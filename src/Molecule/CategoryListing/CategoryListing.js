@@ -55,7 +55,7 @@ const CategoryListing = () => {
                         <div className="grid grid-cols-3 gap-2 lg:hidden pb-4">
                                 <div>
                                         <button className="btn bg-blue-200 text-sm w-full" onClick={()=>setJOb(true)}>
-                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Job Type</span>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800 text-xs"> Job Type</span>
                                         </button>
                                         <Modal show={Job} onHide={()=>setJOb(false)}>
                                                 <Modal.Body>
@@ -89,7 +89,7 @@ const CategoryListing = () => {
 
                                 <div>
                                         <button className="btn bg-green-200 text-sm w-full" onClick={()=>setResult(true)}>
-                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Top Result</span>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800 text-xs"> Top Result</span>
                                         </button>
                                         <Modal show={Result} onHide={()=>setResult(false)}>
                                                 <Modal.Body>
@@ -122,7 +122,7 @@ const CategoryListing = () => {
 
                                 <div>
                                         <button className="btn bg-yellow-200 text-sm w-full" onClick={()=>setLocality(true)}>
-                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800"> Locality</span>
+                                        <i class="fa fa-list-alt text-gray-800" aria-hidden="true"></i>&nbsp;&nbsp;<span className="text-gray-800 text-xs"> Locality</span>
                                         </button>
                                         <Modal show={Locality} onHide={()=>setLocality(false)}>
                                                 
