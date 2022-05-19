@@ -8,14 +8,14 @@ const CategoiesListCard = (props) => {
 
 
                         <div className="grid grid-cols-12 lg:grid lg:grid-cols-4 border-b-2 bg-white rounded-sm ">
-                                <div className="col-span-4 lg:col-span-0">
+                                <div className="col-span-4 lg:col-span-1">
                                         <img src={listing} className=" shadow-xl border-gray-100 rounded-sm h-full" />
                                 </div>
                                 <div className="col-span-8 lg:col-span-3 py-2 ml-4">
                                         <div className="grid grid-cols-4">
                                                 <div className="lg:col-span-3 col-span-4 lg:border-r-2 lg:pr-2">
                                                         <h4 className=" font-semibold lg:text-xl lg:mb-3 mb-1 lg:font-normal text-blue-700">Four Color Print Solution | Printing Service in Dehradun</h4>
-                                                        <p className="text-gray-500 text-xs lg:text-sm" > <i className=" fa fa-map-marker fa-fw text-xs lg:text-sm text-gray-500 lg:inline hidden" /> Shop No 19, K C City Centre Dispensary Road, Dehra...</p>
+                                                        <p className="text-gray-500 text-xs lg:text-sm whitespace-nowrap text-ellipsis overflow-hidden" > <i className=" fa fa-map-marker fa-fw text-xs lg:text-sm text-gray-500 lg:inline hidden " /> Shop No 19, K C City Centre Dispensary Road, Dehradun</p>
                                                         <p className="text-gray-500 text-xs lg:text-sm lg:block hidden" > <i className="fa fa-tags fa-fw text-xs lg:text-sm text-gray-500" /> Flex Printers</p>
                                                         <p className="text-xs lg:text-sm text-gray-500 lg:block hidden mb-1 mt-2 font-semibold"><b>Services</b>: printing press, banner printers, printers for visitin, flex printing servic, </p>
                                                         <div className="lg:hidden block">
