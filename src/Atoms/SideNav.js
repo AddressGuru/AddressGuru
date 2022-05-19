@@ -11,7 +11,7 @@ const SideNav = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div>
+    <div className="justify-center flex">
 
       <i className="cursor-pointer fa fa-bars lg:fa-2x fa-lg mt-3" onClick={handleShow}></i>
       <Offcanvas show={show} onHide={handleClose}>
