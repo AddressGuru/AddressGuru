@@ -3,16 +3,16 @@ import React,{ useState} from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const LandingFirstRight = () => {
+const LandingContact = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div>
+    <div className="block lg:hidden">
 
 
-      <div className="grid grid-cols-1 hidden lg:block">
+      <div className="grid grid-cols-1 ">
         <div className="bg-white px-4 py-4 border-gray-200 border-2">
         <div className="rounded-lg mb-3"><button className="bg-yellow-500 px-4 pb-1 text-sm rounded-l-lg shadow-lg"> <i className="fa fa-eye fa-sm"></i> Views</button><button className="bg-gray-500 pb-1 text-sm text-white px-2 rounded-r-lg shadow-lg">245540</button></div>
           <p className="text-blue-500 text-lg mb-2 font-semibold"><i className="fa fa-globe fa-fw yoi"></i> Visit Website</p>
@@ -44,7 +44,7 @@ const LandingFirstRight = () => {
           </ul>
         </div>
       </div>
-      <div className="px-2 hidden lg:block ">
+      <div className="px-2">
         <button className="float-left text-xs text-red-500 font-bold" onClick={handleShow}><i className="fa fa-exclamation-circle"></i> Report</button>
        <span className="text-xs float-right "><b>AD  ID-</b> 12345762127854 </span>
                                                              
@@ -52,7 +52,7 @@ const LandingFirstRight = () => {
 
 
       <div className="grid grid-cols-1 bg-white  mt-12 ">
-      <div className=" ">
+      <div className="hidden ">
           <div className="px-4 py-2 bg-gray-200 ">
 
             <h5>
@@ -244,4 +244,4 @@ const LandingFirstRight = () => {
 }
 
 
-export default LandingFirstRight
+export default LandingContact

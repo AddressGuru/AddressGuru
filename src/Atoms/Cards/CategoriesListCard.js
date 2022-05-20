@@ -8,7 +8,7 @@ const CategoiesListCard = (props) => {
 
 
                         <div className="grid grid-cols-12 lg:grid lg:grid-cols-4 border-b-2 bg-white rounded-sm ">
-                                <div className="col-span-4 lg:col-span-1">
+                                <div className="col-span-4 lg:col-span-1 ">
                                         <img src={listing} className=" shadow-xl border-gray-100 rounded-sm h-full" />
                                 </div>
                                 <div className="col-span-8 lg:col-span-3 py-2 ml-4">

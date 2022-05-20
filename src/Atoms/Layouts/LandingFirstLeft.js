@@ -9,20 +9,20 @@ const LandingFirstLeft = () => {
         <div>
 
           <br />
-          <h3 className="font-semibold">About Us
+          <h3 className="font-semibold text-xl mb-1">About Us
           </h3>
           <hr />
-          <p className="text-sm">
+          <p className="text-sm mt-1">
 
             Best Astrologer in Dehradun Jaimini Astro the famous people in Dehradun for his prediction. He specializes in Vaastu, our mission is to bring positive change in the area of relationship, Career health business, etc,
           </p>
         </div>
 
         <div className="py-4">
-          <h3 className="font-semibold">Services
+          <h3 className="font-semibold text-xl mb-1">Services
           </h3>
           <hr />
-          <p className=" font-semibold">
+          <p className=" font-semibold mt-1">
             Astrologer SK Shastri ji provides below services
           </p>
           <div className="px-4 grid grid-cols-2">
@@ -43,10 +43,10 @@ const LandingFirstLeft = () => {
 
 
         <div className="py-4">
-          <h3 className="font-semibold">Payment Mode
+          <h3 className="font-semibold text-xl mb-1">Payment Mode
           </h3>
           <hr />
-          <p className=" font-semibold">
+          <p className=" font-semibold mt-1">
             JAIMINI ASTRO acceptable payment modes::
           </p>
           <div className="px-4">
@@ -59,10 +59,10 @@ const LandingFirstLeft = () => {
 
 
         <div className="py-4">
-          <h3 className=" font-semibold">Business Hours
+          <h3 className=" font-semibold text-xl mb-1">Business Hours
           </h3>
           <hr />
-          <p className=" font-semibold">
+          <p className=" font-semibold mt-1">
             Astrologer SK Shastri ji
           </p>
           <div className="px-4">
@@ -94,7 +94,7 @@ const LandingFirstLeft = () => {
           </div>
           <div className="grid grid-cols-2 gap-2 pt-12">
             <div>
-              <h3 className=" font-semibold">State
+              <h3 className=" font-semibold text-xl mb-1">State
               </h3>
               <hr />
               <p className=" font-semibold">
@@ -102,7 +102,7 @@ const LandingFirstLeft = () => {
               </p>
             </div>
             <div>
-              <h3 className=" font-semibold">City
+              <h3 className=" font-semibold text-xl mb-1">City
               </h3>
               <hr />
               <p className=" font-semibold">

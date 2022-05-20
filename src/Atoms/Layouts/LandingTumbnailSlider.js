@@ -3,6 +3,7 @@ import Landing from "../../Asset/Image/landing1.png"
 import Landing2 from "../../Asset/Image/landing2.png"
 import Landing3 from "../../Asset/Image/landing3.png"
 import { Carousel } from "react-bootstrap";
+import LandingContact from "./Mobile/LandingContact";
 
 
 const ThumbnailSlider=()=>{
@@ -35,6 +36,7 @@ const ThumbnailSlider=()=>{
   </Carousel>
 </div>
 </div>
+
 
                 </div>
         )
