@@ -396,7 +396,7 @@ const Job = () => {
                                             </li>
                                             {/*------ end pagination map ------*/}
 
-                                            <li className='w-100 d-block d-lg-none'></li>
+                                            <li className=''></li>
                                             <li
                                                 className={
                                                     'nv page-item itemnv-3' +

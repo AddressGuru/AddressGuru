@@ -5,8 +5,8 @@ const LandingThirdRight = () => {
           <div>
       <div className="grid grid-cols-1 bg-white  ">
       <div className="bg-gray-300 border-2 border-white  py-12 px-4">
-        <h2>Send Enquery</h2>
-        <hr/>
+        <h2 className="mb-2">Send Enquery</h2>
+        <hr className="mb-3"/>
         <div>
         <input type={`text`} placeholder={`Full Name`} className="border-2 mb-4 border-gray-300 w-full px-3 py-1"/>
         </div>

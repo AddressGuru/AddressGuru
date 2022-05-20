@@ -3,7 +3,7 @@ const LandingSecondLeft = () => {
                 
         return (
           <div>
-      <div className="grid grid-cols-1 bg-white mt-2 px-4 pt-4">
+      <div className="grid grid-cols-1 bg-white mt-2 px-4 py-4">
                                       <h2 className="text-xl mb-1">Overview - JAIMINI ASTRO</h2>
                                       <hr/>
                                       <p className="text-sm mt-1">JAIMINI ASTRO at Dehradun Uttrakhand, is a Astrologer in Dehradun. There services are :- Complete Predictions Marriage & Compatibility Health Outlook Career Forecast Prosperity & Wealth Children Matters . , their acceptable payment mode is Cash Debit/Credit Card Net Banking Other
